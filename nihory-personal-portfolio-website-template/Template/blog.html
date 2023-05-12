@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Template | Nihory - Blog</title>
+    <meta name="author" content="Atul Prajapati | Freelance web developer">
+    <meta name="description" content="Nihory is a creative personal & portfolio template based on HTML, CSS and Javascript. You can use it for your personal resume, CV or your portfolio. It will help you to present your self even your Business & portfolio more smartly and easily. Nihory is written in valid and clean HTML & CSS3 code. It’s easy to customize">
+    <meta name="keywords" content="portfolio template, template for portfolio, portfolio template website, portfolio template indesign, portfolio template design, portfolio template free, portfolio template architecture, portfolio template for word, portfolio template for architecture, portfolio template bootstrap, portfolio template html, teaching portfolio template, portfolio template indesign free, cover page for portfolio template, portfolio template html free">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/nihory-fav.png"/>
+
+    <!------------------ External Main CSS ------------------>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!------------------ External Blog CSS ------------------>
+    <link rel="stylesheet" href="css/blog.css">
+
+    <!------------------ Box Icons ------------------>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!------------------------- Loading Screen start ------------------------------->
+    <div class="loading">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+    </div>
+    <!------------------------- Loading Screen ends ------------------------------->
+
+    <!------------------------ Header starts from here ----------------------->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div>
+                <a href="#" class="nav__logo">Nihory</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="index.html" class="nav__link active"> Home </a></li>
+                    <li class="nav__item"> <a href="index.html#about" class="nav__link"> About </a></li>
+                    <li class="nav__item"> <a href="blog.html" class="nav__link"> Blog </a></li>
+                    <li class="nav__item"> <a href="index.html#skills" class="nav__link"> Skills </a></li>
+                    <li class="nav__item"> <a href="index.html#services" class="nav__link"> Services </a></li>
+                    <li class="nav__item"> <a href="index.html#works" class="nav__link"> Works </a></li>
+                    <li class="nav__item"> <a href="index.html#contact" class="nav__link"> Contact </a></li>
+                    <!-- Dark mode switch -->
+                    <li class="nav__item"> 
+                        <input type="checkbox" class="l-d-mode" id="l-d-mode" >
+                        <label for="l-d-mode" class="l-d-label">
+                            <i class='bx bxs-moon'></i>
+                            <i class='bx bxs-sun' ></i>
+                            <div class="ball"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!------------------------ Header ends from here ----------------------->
+
+    <!------------------------ Blog Body starts from here ----------------------->
+    <main class="l-main">
+        <!------------------- Trending Blog start ------------------->
+        <section class="trending-blog">
+            <div class="trending-blog__container bd-grid">
+                <h2 class="trending-blog-title">
+                    How to Gamify Coding with Charlotte Cheng.. 
+                </h2>
+                <p class="trending-blog-text">
+                    The first item (image) in the parameter will be put on top. The second item (color background) will be put underneath the first. You can also set other properties individually. For example, to set the image size and position. Benefit of this method is you can implement it for other cases easily.
+                </p>
+                <a href="single-blog.html">
+                    <button class="button__blog">Read More</button>
+                </a>
+            </div>
+        </section>
+        <!------------------- Trending Blog end ------------------->
+
+        <!------------------- Blog grid layout start --------------------->
+        <div class="blog-grids">
+            <div class="blog-grid">
+                <img src="img/blog grid 1.jpg" class="blog-grid-img" alt="Blogs" title="Blogs">
+                <div class="blog-grid-content">
+                    <a href="single-blog.html">
+                        <h3 class="blog-grid-title">
+                            How to Gamify Coding with.. 
+                        </h3>
+                    </a>
+                    <p class="blog-grid-text">
+                        The second item (color background) will be put underneath the first.
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <img src="img/blog grid 2.jpg" class="blog-grid-img" alt="Blogs" title="Blogs">
+                <div class="blog-grid-content">
+                    <a href="single-blog.html">
+                        <h3 class="blog-grid-title">
+                            Artificial hand using embedded system 
+                        </h3>
+                    </a>
+                    <p class="blog-grid-text">
+                        A report from the World Economic Forum (WEF) predicts that robots...
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <img src="img/blog grid 3.jpg" class="blog-grid-img" alt="Blogs" title="Blogs">
+                <div class="blog-grid-content">
+                    <a href="single-blog.html">
+                        <h3 class="blog-grid-title">
+                            TikTok Adds 'Year in Review' Option to...
+                        </h3>
+                    </a>
+                    <p class="blog-grid-text">
+                        The pandemic we find ourselves in is creating “a double disruption...
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <img src="img/blog grid 4.jpg" class="blog-grid-img" alt="Blogs" title="Blogs">
+                <div class="blog-grid-content">
+                    <a href="single-blog.html">
+                        <h3 class="blog-grid-title">
+                            Hyundai is acquiring lifelike robotics...
+                        </h3>
+                    </a>
+                    <p class="blog-grid-text">
+                        The silver lining is that more jobs overall should be created...
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <img src="img/blog grid 5.jpg" class="blog-grid-img" alt="Blogs" title="Blogs">
+                <div class="blog-grid-content">
+                    <a href="single-blog.html">
+                        <h3 class="blog-grid-title">
+                            UK proposal gives autonomous car backup...
+                        </h3>
+                    </a>
+                    <p class="blog-grid-text">
+                        “When there were shutdowns, it seemed to be posing a disproportionate...
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <img src="img/blog grid 6.jpg" class="blog-grid-img" alt="Blogs" title="Blogs">
+                <div class="blog-grid-content">
+                    <a href="single-blog.html">
+                        <h3 class="blog-grid-title">
+                            Inequality likely to worsen as robots set...
+                        </h3>
+                    </a>
+                    <p class="blog-grid-text">
+                        “The window of opportunity for proactive management of this change...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!------------------- Blog grid layout end --------------------->
+
+        <!------------------- Pagination start's ----------------------->
+        <div class="blog-pagination">
+            <a href="#">
+                <button class="pagination">1</button>
+            </a>
+            <a href="#">
+                <button class="pagination">2</button>
+            </a>
+            <a href="#">
+                <button class="pagination">3</button>
+            </a>
+            <a href="#">
+                <button class="pagination">4</button>
+            </a>
+            <a href="#">
+                <button class="pagination">5</button>
+            </a>
+            <a href="#">
+                <button class="pagination">➼</button>
+            </a>
+        </div>
+        <!------------------- Pagination end's ----------------------->
+    </main>
+    <!------------------------ Blog Body ends from here ----------------------->
+
+    <!------------------------ Footer starts from here ----------------------->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Nihory</h1>
+            <p class="footer-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eligendi modi maiores.
+            </p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__link"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+            <p class="footer-copy">All rights reserved by Nihory - 2021</p>
+        </div>
+    </footer>
+    <!------------------------ Footer ends from here ----------------------->
+
+    <!------------------------- Javascript file ---------------------------->
+    <script src="js/script.js"></script>
+
+    <!---------------------------- Magnific popup start ------------------------>
+    <script type="text/javascript">
+		$(".works__container").magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery:{
+				enabled: true
+			}
+		});
+    </script>
+    <!---------------------------- Magnific popup ends ------------------------>
+</body>
+</html>

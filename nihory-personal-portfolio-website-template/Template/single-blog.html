@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Template | Nihory - Single Blog</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/nihory-fav.png"/>
+
+    <!------------------ External Main CSS ------------------>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!------------------ External Blog CSS ------------------>
+    <link rel="stylesheet" href="css/single-blog.css">
+
+    <!------------------ Box Icons ------------------>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!------------------------- Loading Screen start ------------------------------->
+    <div class="loading">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+    </div>
+    <!------------------------- Loading Screen ends ------------------------------->
+
+    <!------------------------ Header starts from here ----------------------->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div>
+                <a href="#" class="nav__logo">Nihory</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="index.html" class="nav__link active"> Home </a></li>
+                    <li class="nav__item"> <a href="index.html#about" class="nav__link"> About </a></li>
+                    <li class="nav__item"> <a href="blog.html" class="nav__link"> Blog </a></li>
+                    <li class="nav__item"> <a href="index.html#skills" class="nav__link"> Skills </a></li>
+                    <li class="nav__item"> <a href="index.html#services" class="nav__link"> Services </a></li>
+                    <li class="nav__item"> <a href="index.html#works" class="nav__link"> Works </a></li>
+                    <li class="nav__item"> <a href="index.html#contact" class="nav__link"> Contact </a></li>
+                    <!-- Dark mode switch -->
+                    <li class="nav__item"> 
+                        <input type="checkbox" class="l-d-mode" id="l-d-mode" >
+                        <label for="l-d-mode" class="l-d-label">
+                            <i class='bx bxs-moon'></i>
+                            <i class='bx bxs-sun' ></i>
+                            <div class="ball"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!------------------------ Header ends from here ----------------------->
+
+    <!------------------------ Blog Body starts from here ----------------------->
+    <main class="l-main">
+        <div class="blog-img">
+            <img src="img/pilate.jpg" alt="Nihory - blog image" title="Nihory - blog image">
+        </div>
+        <div class="blog-content">
+            <h1 class="blog-heading">
+                Connexin is launching the UK’s first nationwide IoT network
+            </h1>
+            <div class="auther-detail">
+                <img src="img/nihory-fav.png" class="auther" alt="Auther" title="Auther">
+
+                <p class="auther-name"><strong> Nihory Berst </strong> - 20 Dec 2020 - 6 min read</p>
+            </div>
+            <div class="blog-content-detail">
+                <p class="blog-text">
+                    Hull-based Connexin is set to win the race to offer the UK’s first nationwide IoT network.
+                </p>
+                <p class="blog-text">
+                    Connexin promises to continue delivering “carrier-grade” connectivity over its Long Range Wide Area Network (LoRaWAN) as the company expands beyond its current regional deployments.
+                </p>
+                <p class="blog-text">
+                    Existing trials of Connexin’s network have been held with organisations including Yorkshire Water, Hull City Council, and Amey.
+                </p>
+                <p class="blog-text">
+                    Following the success of those earlier trials – in addition to securing major investment – Connexin is now ready to expand its IoT network across the country.
+                </p>
+
+                <div class="blog-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/P90UWbYQD_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <p class="blog-text">
+                    Last year, IoT Breakthrough – an independent organisation recognising the top companies, technologies and products in the global market – awarded Connexin ‘Smart City Deployment of the Year’ for a Newcastle smart road pilot.
+                </p>
+                <p class="blog-text">
+                    Connexin went on to deliver a purpose-built smart city operating system for Hull Council. Earlier this year, Connexin helped Amey implement the CityOS platform to improve highway maintenance services across Sheffield.
+                </p>
+                <p class="blog-text">
+                    A more detailed timeline for the expansion of Connexin’s LoRaWAN network is not yet available. We’ve reached out to Connexin and have been assured the next few areas will be announced within the next couple of months.
+                </p>
+            </div>
+        </div>
+        <!------------------------ Blog Body ends from here ----------------------->
+
+
+        <!------------------------ Comment form start from here ------------------------>
+        <div class="comment">
+            <h2>Leave a Comment</h2>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <form action="#" class="contact__form">
+                <textarea placeholder="Comment" name="" id="" cols="0" rows="5" class="contact__input"></textarea>
+
+                <div class="contact__inputs">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                </div>
+
+                <input type="submit" value="Submit Comment" class="button contact__button">
+            </form>
+        </div>
+        <!---------------------------- Comment form ends ------------------------>
+
+        <!---------------------------- Related blog post start ------------------>
+        <h1 class="related-blog-heading">Related Blog's</h1>
+        <div class="related-blog-posts">
+            <div class="post">
+              <img src="img/blog grid 5.jpg" class="post-img" alt="">
+              <div class="post-content">
+                <a href="single-blog.html">
+                    <h3>How to Gamify Coding with Charlotte Cheng..</h3>
+                </a>
+                <span class="date">08 July 2020 | Nihory</span>
+              </div>
+            </div>
+            
+            <div class="post">
+              <img src="img/blog grid 2.jpg" class="post-img" alt="">
+              <div class="post-content">
+                <a href="single-blog.html">
+                    <h3>Artificial hand using embedded system </h3>
+                </a>
+                <span class="date">08 July 2020 | Nihory</span>
+              </div>
+            </div>
+            
+            <div class="post">
+              <img src="img/blog grid 4.jpg" class="post-img" alt="">
+              <div class="post-content">
+                <a href="single-blog.html">
+                    <h3>Inequality likely to worsen as robots set...</h3>
+                </a>
+                <span class="date">08 July 2020 | Nihory</span>
+              </div>
+            </div>
+        </div>
+        <!---------------------------- Related blog post ends ------------------>
+
+    </main>
+    <!------------------------ Blog Body ends from here ----------------------->
+
+    <!------------------------ Footer starts from here ----------------------->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Nihory</h1>
+            <p class="footer-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eligendi modi maiores.
+            </p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__link"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+            <p class="footer-copy">All rights reserved by Nihory - 2021</p>
+        </div>
+    </footer>
+    <!------------------------ Footer ends from here ----------------------->
+
+    <!------------------------- Javascript file ---------------------------->
+    <script src="js/script.js"></script>
+
+    <!---------------------------- Magnific popup start ------------------------>
+    <script type="text/javascript">
+		$(".works__container").magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery:{
+				enabled: true
+			}
+		});
+    </script>
+    <!---------------------------- Magnific popup ends ------------------------>
+</body>
+</html>

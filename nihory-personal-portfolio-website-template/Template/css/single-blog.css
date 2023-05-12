@@ -1,0 +1,243 @@
+/* ----------------------- Google Fonts Starts from here -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;800;900&display=swap');
+/* ----------------------- Google Fonts Ends from here -------------------- */
+
+/* ----------------------- CSS Variables Starts from here ------------------- */
+:root
+{
+    --header-height: 3rem;
+    --nav-width: 324px;
+
+    /* font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Colors */
+    --first-color: #3742fa;
+    --first-color-dark: #5352ed;
+    --first-color-darken: #4747f0;
+    --text-color: #54423D;
+    --first-color-light: #EAE7E6;
+    --first-color-light-dark: #d7dcee;
+    --first-color-lighten: #FFFAFA;
+
+    /* Font & Typography */
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Margins */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+
+    /* z-index */
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px)
+{
+    :root
+    {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+/* ----------------------- CSS Variables Ends from here ------------------- */
+
+
+/* ----------------------- Blog Body Starts from here ------------------- */
+.blog-img
+{
+    margin: 4rem 1rem 1rem 1rem;
+}
+
+.blog-img img
+{
+    height: auto;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.blog-content
+{
+    margin: 1rem 1rem;
+}
+
+.blog-heading
+{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+}
+
+.auther-detail
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.auther
+{
+    max-width: 30px;
+    max-height: 30px;
+    height: auto;
+    width: 100%;
+}
+
+.blog-content-detail
+{
+    margin-top: 1rem;
+}
+
+.blog-text
+{
+    padding-top: 1rem;
+}
+
+.blog-video
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.comment
+{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #eff0fb77;
+    border-radius: .5rem;
+}
+
+.comment p
+{
+    padding-bottom: 1rem;
+}
+/* ----------------------- Blog Body Ends from here ------------------- */
+
+
+/* ---------------------- related blog posts Starts from here-------------- */
+.related-blog-heading
+{
+    color: var(--first-color);
+    text-align: center;
+}
+
+.related-blog-posts
+{
+    justify-content: center;
+    padding: 5px;
+}
+
+.post
+{
+    width: min(600px, 100%);
+}
+
+.post img
+{
+    width: 100%;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+
+.post-content
+{
+    background-color: #ffffff;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: .3s linear;
+
+    box-shadow:  4px -4px 16px #1a26cf1f, 
+                 -4px 4px 16px #3510bb3b;
+}
+
+.post-content h3
+{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--first-color);
+}
+
+.date
+{
+    font-size: 12px;
+    font-style: italic;
+    color:var(--first-color);
+}
+
+.post:hover .post-img
+{
+    transform: translateY(20px)
+}
+
+.post:hover .post-content
+{
+    transform: translateY(-80px)
+}
+/* ---------------------- related blog posts Ends from here-------------- */
+
+
+/* ------------------ Media Query for laptop/desktop screen ------------------------- */
+@media screen and (min-width: 1024px)
+{
+    .blog-img
+    {
+        margin: 2rem 1rem;
+    }
+
+    .blog-content
+    {
+        margin: 1rem 4rem;
+    }
+
+    .blog-heading
+    {
+        font-size: var(--h1-font-size);
+    }
+
+    .auther
+    {
+        max-width: 50px;
+        max-height: 50px;
+        height: auto;
+        width: 100%;
+    }
+
+    .comment
+    {
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    .related-blog-posts
+    {
+        width: min(1200px, 100%);
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .post
+    {
+        width: calc(33% - 10px);
+        overflow: hidden;
+    }
+}
+/* ------------------ Media Query for laptop/desktop screen ------------------------- */

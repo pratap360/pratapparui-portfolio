@@ -1,0 +1,412 @@
+/* ----------------------- Google Fonts ----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* ----------------------- CSS Variables ---------------------------------- */
+:root{
+    --nav-width: 92px;
+
+    /* --------- Colors ----------- */
+    --first-color: #0c5df4;
+    --bg-color: #121920;
+    --sub-color: #b6cefc;
+    --white-color: #fff;
+
+    /* --------- Body font -------- */
+    --body-font: 'Poppins', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+
+    /* --------- Z-index ---------- */
+    --z-fixed: 100;
+}
+
+/* -------------------------------------------- Base ---------------------------- */
+*,::before,::after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    position: relative;
+    margin: 0;
+    padding: 2rem 1rem 0 6.75rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+h1
+{
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2
+{
+    padding-top: 1rem;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* .nav__list
+{
+    overflow-y: scroll;
+} */
+
+a{
+    text-decoration: none;
+}
+
+.shadow
+{
+    display: inline;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(50, 50, 50, 0.72);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(50, 50, 50, 0.72);
+    box-shadow: 1px 0px 10px 0px rgba(50, 50, 50, 0.72);
+}
+
+.wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------- L Nav ------------------------ */
+.l-navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    padding: 1.5rem 1.5rem 2rem;
+    transition: .5s;
+    z-index: var(--z-fixed);
+}
+
+/* ---------------------- Nav --------------------------- */
+.nav
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav__brand
+{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nav__toggle
+{
+    font-size: 1.25rem;
+    padding: .75rem;
+    cursor: pointer;
+}
+
+.nav__logo
+{
+    color: var(--white-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+
+.nav__link
+{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav__link:hover
+{
+    background-color: var(--first-color);
+}
+
+.nav__icon
+{
+    font-size: 1.25rem;
+}
+
+.nav__name
+{
+    font-size: var(--small-font-size);
+}
+
+
+/* ------------- Expander Menu ---------------- */
+.expander
+{
+    width: calc(var(--nav-width) + 9.25rem);
+}
+
+/* ------------- Add padding body -------------- */
+.body-pd
+{
+    padding: 2rem 1rem 0 16rem;
+}
+
+.doc-content
+{
+    padding: 0 2rem 0 2rem;
+}
+
+/* ------------- Active Links Menu -------------- */
+.active
+{
+    background-color: var(--first-color);
+}
+
+/* ------------------ Collapse ------------------ */
+.collapse
+{
+    grid-template-columns: 20px max-content 1fr;
+}
+
+.collapse__link
+{
+    justify-self: flex-end;
+    transition: .5;
+}
+
+.collapse__menu
+{
+    display: none;
+    padding: .75rem 2.25rem;
+}
+
+.collapse__sublink
+{
+    color: var(--sub-color);
+    font-size: var(--small-font-size);
+}
+
+.collapse__sublink:hover
+{
+    color: var(--white-color);
+}
+
+/* ----------------- Show Collapse --------------- */
+.showCollapse
+{
+    display: block;
+}
+
+/* ----------------- Rotate submenu icon ------------- */
+.rotate
+{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+/* ------------------------------ Content Styling starts here ---------------------- */
+/* --------------------------------------------------------------------------------- */
+img
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-icon
+{
+    font-size: 1.40rem;
+    color: #0C5DF4;
+}
+
+/* ------------------------------------- Support System ----------------------------------*/
+.info div{
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100%;
+    margin: 75px auto 0;
+    background-color: #fff;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, .14);
+    border-radius: 10px;
+    color: #444;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card .card-header {
+    position: relative;
+    height: 48px;
+}
+
+.card .card-header .profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.card .card-body {
+    padding: 10px 40px;
+}
+
+.card .card-body .full-name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0 0;
+}
+
+.card .card-body .username {
+    font-size: 13px;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.card .card-body .city {
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.card .card-body .desc {
+    line-height: 24px;
+}
+
+.card .social-icon {
+    font-size: 30px;
+    margin: 0 7px;
+}
+
+.card .social-icon.facebook {
+    color: #3b5999;
+}
+
+.card .social-icon.twitter {
+    color: #55acee;
+}
+
+.card .social-icon.tumblr {
+    color: #34465d;
+}
+
+.card .social-icon.youtube {
+    color: #cd201f;
+}
+
+.card .social-icon.linkedin {
+    color: #0077b5;
+}
+
+.card .social-icon.google-plus {
+    color: #dd4b39;
+}
+
+.card .social-icon.google-plus {
+    color: #000;
+}
+
+.card .card-footer {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+}
+
+.card .card-footer .col {
+    display: table-cell;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.card .card-footer .count {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.vr {
+    border-right: 1px solid #e6e6e6;
+}
+
+.col
+{
+    background-color: #0C5DF4;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.col p
+{
+    font-weight: 600;
+    color: #fff;
+}
+
+.col p a
+{
+    color: #fff;
+}
+
+@media (max-height: 500px){
+    .social_media{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card {
+        width: 96%;
+    }
+
+    .card .card-body {
+        padding: 10px 20px;
+    }
+
+    .card .card-footer .col {
+        padding: 0 10px;
+    }
+
+    .card .card-footer .count {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+/* -------------------------------------------- Support system ------------------------------ */

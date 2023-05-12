@@ -1,0 +1,253 @@
+/* ----------------------- Google Fonts start -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;800;900&display=swap');
+/* ----------------------- Google Fonts end ---------------------- */
+
+/* ----------------------- CSS Variables Start ------------------- */
+:root
+{
+    --header-height: 3rem;
+    --nav-width: 324px;
+
+    /* font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Colors */
+    --first-color: #3742fa;
+    --first-color-dark: #5352ed;
+    --first-color-darken: #4747f0;
+    --text-color: #54423D;
+    --first-color-light: #EAE7E6;
+    --first-color-light-dark: #d7dcee;
+    --first-color-lighten: #FFFAFA;
+
+    /* Font & Typography */
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Margins */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+
+    /* z-index */
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px)
+{
+    :root
+    {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+/* ----------------------- CSS Variables End ------------------- */
+
+
+/* -------------------------------- Base Start ------------------------ */
+body
+{
+    background-color: #eff0fb;
+}
+/* -------------------------------- Base End ------------------------ */
+
+/* ------------------------ Trending Blog Section Start -------------------- */
+.trending-blog
+{
+    margin: 4rem 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    background-image: linear-gradient(to bottom, var(--first-color), var(--first-color-dark)), url('../img/trending.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.trending-blog-title
+{
+    font-size: var(--h1-font-size);
+    color: var(--first-color-light);
+}
+
+.trending-blog-text
+{
+    color: var(--first-color-light);
+    font-weight: var(--font-medium);
+}
+
+.button__blog
+{
+    display: inline-block;
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+    padding: 1rem 2rem;
+    margin: 1rem 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--font-bold);
+    font-size: var(--normal-font-size);
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    transition: .3s;
+    cursor: pointer;
+
+    background-size: 500%;
+    background-image: linear-gradient(to left, #ffffff, var(--first-color-dark), #ffffff);
+}
+
+.button__blog:hover
+{
+    color: var(--first-color);
+    background-position: right;
+}
+/* ------------------------ Trending Blog Section End -------------------- */
+
+
+/* ------------------------ Blog Grid Section Start -------------------- */
+.blog-grids
+{
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+.blog-grid
+{
+    background-color: var(--first-color-lighten);
+    border: 10px solid var(--first-color-lighten);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: .3s linear;
+}
+
+.blog-grid:hover
+{
+    transform: translateY(-5px);
+    box-shadow:  4px -4px 16px #1a26cf1f, 
+                 -4px 4px 16px #3510bb3b;
+}
+
+.blog-grid:hover .blog-grid-img
+{
+    transform: translateY(-20px);
+}
+
+.blog-grid-img
+{
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+    transition: .3s linear;
+}
+
+.blog-grid-content
+{
+    padding: .5rem;
+}
+
+.blog-grid-title
+{
+    color: var(--first-color);
+}
+
+.blog-grid-text
+{
+    color: #54423D;
+}
+/* ------------------------ Blog Grid Section End -------------------- */
+
+
+/* ---------------------------------- Pagination Start --------------------- */
+.blog-pagination
+{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination
+{
+    background-color: var(--first-color-darken);
+    color: var(--first-color-lighten);
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    margin: 0 .5rem;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.pagination:hover
+{
+    background-color: var(--first-color);
+}
+/* ---------------------------------- Pagination End --------------------- */
+
+
+/* ------------------------- Media Queries for tablet screen ---------------------------- */
+@media screen and (min-width: 786px)
+{
+    .trending-blog
+    {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .trending-blog-title
+    {
+        padding: 0 0 1rem 0;
+    }
+
+    .trending-blog-text
+    {
+        padding: 0 0 1rem 0;
+    }
+}
+/* ------------------------- Media Queries for tablet screen ---------------------------- */
+
+
+/* ------------------ Media Query for laptop/desktop screen ------------------------- */
+@media screen and (min-width: 1024px)
+{
+    .trending-blog
+    {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .trending-blog-title
+    {
+        padding: 0 0 1rem 0;
+    }
+
+    .trending-blog-text
+    {
+        padding: 0 0 1rem 0;
+    }
+
+    .blog-grids
+    {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-rows: repeat(3, 100%);
+        margin: 4rem 3rem 2rem 3.5rem;
+    }
+}
+/* ------------------ Media Query for laptop/desktop screen ------------------------- */

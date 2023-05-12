@@ -1,0 +1,16 @@
+Hey Dear,
+
+First of all thank you for buying my work.
+
+After downloding and extracting template folder you can see zip folder named Template + Doc folder along with this help file. 
+
+In template folder you will get all template files and in Doc folder we will get all file you just have to open index.html file in your faviorate browser.
+
+And if dont like to open offline folder again and again you can also open online documentation check out the link bellow
+
+https://nihory-doc.netlify.app/
+
+
+
+
+Thank you, Dear.
