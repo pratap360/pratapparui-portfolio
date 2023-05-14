@@ -2,13 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratap's Portfolio</title>
+    <meta name="author" content="Pratap Parui | Mr Parui Web Portfolio">
+    <!-- ! change it while in devlopment -->
+    <meta name="description" content="This is a Portfolio for Pratap Parui">
+    <meta name="keywords" content="frontend developer, frontend designer, frontend engineer, Graphic designer,ui designer, ux designer, ui ux designer, blogger, blogging,freelancing, technical writter, content writter">
+
+
+
+
+
+    <!-- external css  -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- favicon imported  -->
+	<link rel="icon" href="resources/favicon.ico"/>
+     <!------------------ Box Icons ------------------>
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <!-- jquery cdn link -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- magnific popup -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    
 </head>
 <body>
-    <h1>This Portfolio  is on devlopment stage</h1>
+
+    <!------------------------- Loading Screen start ------------------------------->
+    <!-- <div class="loading">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+    </div> -->
+    <!------------------------- Loading Screen ends ------------------------------->
+ <!------------------------ Header starts from here ----------------------->
+ <header class="l-header">
+    <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div>
+            <a href="#" class="nav__logo">Pratap Parui</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="" class="nav__link active"> Home </a></li>
+                <li class="nav__item"> <a href="" class="nav__link"> About </a></li>
+                <li class="nav__item"> <a href="" class="nav__link"> Blog </a></li>
+                <li class="nav__item"> <a href="" class="nav__link"> Skills </a></li>
+                <li class="nav__item"> <a href="" class="nav__link"> Services </a></li>
+                <li class="nav__item"> <a href="" class="nav__link"> Works </a></li>
+                <li class="nav__item"> <a href="" class="nav__link"> Contact </a></li>
+                <!-- Dark mode switch -->
+                <li class="nav__item"> 
+                    <input type="checkbox" class="l-d-mode" id="l-d-mode" >
+                    <label for="l-d-mode" class="l-d-label">
+                        <i class='bx bxs-moon'></i>
+                        <i class='bx bxs-sun' ></i>
+                        <div class="ball"></div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!------------------------ Header ends from here -----------------------> 
+    <!-- <h1>This Portfolio  is on devlopment stage</h1> -->
+    
+    <!------------------------ Body starts from here ----------------------->
+    <main class="l-main">
+        <!------------------- Home Section Starts from here ------------------->
+        <section class="home" id="home">
+            
+
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="resources/profile-pic(26).png" alt="Pratap Parui" title="Pratap Parui">
+                    </div>
+
+                    <h1 class="home__title">Pratap Parui</h1>
+                    <span class="home__profession">Frontend Developer</span>
+
+                    <div class="home__social">
+                        <a href="#" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-github' ></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-behance' ></i></a>
+                    </div>
+
+                    <a download="resume/nihory resume.pdf" href="#" class="button home__button">Download Resume</a>
+                </div>
+            </div>
+        </section>
+        <!------------------- Home Section Ends from here ------------------->
+
+
+
+
 </body>
 <script src="/js/script.js"></script>
 </html>
