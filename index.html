@@ -31,27 +31,83 @@
 <body>
 
  <main>
-    <section>
-        <nav>
-            <ul>
-                <li>home</li>
-                <li>hired me</li>
-                <li>contact us</li>
-            </ul>
+    <section class="home" id="home">
+
+        <!-- Text Typing Animation in home page *started here* -->
+        <div class="header">
+            <!-- <div class="logo">Pratap Parui</div> -->
+            <!-- <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav> -->
+        </div>
+             <!------------------------ Header starts from here ----------------------->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <!-- <div>
+                <a href="#" class="nav__logo">Nihory</a>
+            </div> -->
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="" class="nav__link active"> Home </a></li>
+                    <li class="nav__item"> <a href="" class="nav__link"> About </a></li>
+                    <li class="nav__item"> <a href="" class="nav__link"> Blog </a></li>
+                    <li class="nav__item"> <a href="" class="nav__link"> Skills </a></li>
+                    <li class="nav__item"> <a href="" class="nav__link"> Services </a></li>
+                    <li class="nav__item"> <a href="" class="nav__link"> Works </a></li>
+                    <li class="nav__item"> <a href="" class="nav__link"> Contact </a></li>
+                    <!-- Dark mode switch -->
+                    <li class="nav__item"> 
+                        <input type="checkbox" class="l-d-mode" id="l-d-mode" >
+                        <label for="l-d-mode" class="l-d-label">
+                            <i class='bx bxs-moon'></i>
+                            <i class='bx bxs-sun' ></i>
+                            <div class="ball"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
         </nav>
+    </header>
+    <!------------------------ Header ends from here ----------------------->
+
+       
+        <div class="container">
+            <div class="text">
+                <h1>Hello👋🏼 I'm <span class="typing"></span></h1>
+                <p>I'm a Web Developer with extensive experience for over 5 years. My expertise is to create and <br> Websites design, graphic design and many more...</p>
+                <div class="btn">
+                    <button>Contact</button>
+                    <a download="resume/nihory resume.pdf" href="resume/nihory resume.pdf" class="button home__button">Download CV</a>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="/resources/home-page-img.png" alt="pratapparui">
+            </div>
+        </div>
     </section>
-    <section class="contents">
-        <h3>
-            the Portfolio is still in progress but make sure use only one 
-        </h3>
-        <img src="/resources/home-page-intro.jpg" style="width: 100%;" alt="pp">
-    </section>
+        <!-- Text Typing Animation in home page *ends here* -->
+
 </main>
 
 
-        <!-- all javascript file are here  -->
+<!-- all javascript file are here  -->
 
-        <script src="js/anime-headling.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!-- <script src="js/anime-headling.js"></script> -->
         <script src="/js/script.js"></script>
     </body>
 </html>
