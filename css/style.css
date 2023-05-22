@@ -87,8 +87,8 @@ body {
 }
 
 .container {
-    padding: 0 100px;
-    margin-top: 50px;
+    padding: 0 75px;
+    margin-top: 25px;
     display: flex;
 }
 
@@ -114,16 +114,16 @@ body {
 .profile {
     /* top: 0; */
     /* bottom: 0; */
+    /* margin-bottom: var(--mb-2); */
+    /* padding-top: 1.3rem; */
+    /* padding-left: .8rem;  */
     position: absolute;
     right: 0;
-    /* padding-top: 1.3rem;
-    padding-left: .8rem; */
     width: 215px;
     height: 215px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: var(--mb-2);
     z-index: 2;
     margin: 95px 30px 85px 30px;
 }
@@ -201,11 +201,11 @@ img {
 
 }
 
-.btn button:nth-child(2) {
+/* .btn button:nth-child(2) {
     background: rgba(253, 189, 49);
     border-color: rgba(253, 189, 49);
     color: #01132d;
-}
+} */
 
 .button {
     display: inline-block;
@@ -428,6 +428,16 @@ body.dark .l-header {
     transform: translateX(24px);
 }
 
+
+body.dark .btn .custbtn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: var(--text-color);
+    border: 1px solid rgb(255 255 255);
+    border-radius: 0.5rem;
+    transition: .3s;
+}
+
 /* ---------------------- Dark Mode switch ---------------- */
 
 
@@ -496,7 +506,39 @@ body.dark .l-header {
 
 
 /* ----- media query start here ----- */
+/* Styles for mobile devices */
+@media screen and (max-width: 600px) {
+    .nav__menu {
+        width: var(--nav-width);
+    }
+    .text h1 {
+        font-size: 22px;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
 
+    .profile {
+        position: absolute;
+        right: 0;
+        width: 215px;
+        height: 215px;
+        background-color: var(--first-color);
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: var(--mb-2);
+        z-index: 2;
+        margin: 15px 87px 15px 87px;
+    }
+
+    .container{
+        padding: 10px 20px;
+        margin-top: 50px;
+        display: flex;
+    }
+}
+
+
+/* style for tablets deviecs  */
 @media screen and (min-width: 768px) {
     :root {
         --h1-font-size: 2.25rem;
@@ -506,45 +548,48 @@ body.dark .l-header {
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
+
+    
+    
+    .home__button {
+        width: initial;
+    }
+
+    /* ------------------------- Home Section Button ------------------------ */
+
+
+    /* ------------------------- Nav Menu Section ------------------------ */
+    .nav__menu {
+        width: var(--nav-width);
+    }
+    /* ------------------------- Nav Menu Section ------------------------ */
+
+    
+
+    /* ------------------------- CSS Grid for Sections --------------------  */
+    .about__container,
+    .skills__container,
+    .services__container,
+    .works__container,
+    .contact__container,
+    .contact__inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 }
-
-
-
-.home__button {
-    width: initial;
-}
-
-/* ------------------------- Home Section Button ------------------------ */
-
-
-/* ------------------------- Nav Menu Section ------------------------ */
-.nav__menu {
-    width: var(--nav-width);
-}
-
-/* ------------------------- Nav Menu Section ------------------------ */
-
 
 /* ------------------------- CSS Grid for Sections --------------------  */
-.about__container,
-.skills__container,
-.services__container,
-.works__container,
-.contact__container,
-.contact__inputs {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-/* ------------------------- CSS Grid for Sections --------------------  */
 
 
 
+  
 
 /* ------------------ Media Query for laptop/desktop screen ------------------------- */
 @media screen and (min-width: 1024px) {
 
     /* ---------------------------- Loading Screen start ------------------------ */
-    .loading {
+    /* .loading {
         width: 100%;
         height: 100%;
         background-color: #f8f6f6;
@@ -555,7 +600,7 @@ body.dark .l-header {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     /* ---------------------------- Loading Screen ends ------------------------ */
 
@@ -614,5 +659,11 @@ body.dark .l-header {
 
 /* ------------------------------ Media Query for laptop/desktop screen ------------------------- */
 /* -------------------------------------------------------------------------- */
+
+
+
+  
+
+
 
 /* ----- media query ends here ----- */
