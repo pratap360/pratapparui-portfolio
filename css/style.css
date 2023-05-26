@@ -581,7 +581,25 @@ body.dark .btn .custbtn {
 
 /* ------------------------- CSS Grid for Sections --------------------  */
 
-
+/* progress bar at the top  */
+.Progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 5px;
+    background: #CCC;
+}
+.Progress-indicator {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background: #1e5799;
+    background: linear-gradient(to bottom,#1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    background: linear-gradient(135deg,#207cca 0%,#7db9e8 33%,#1e5799 67%,#2989d8 100%);
+    background: linear-gradient(135deg,#259 0%,#49D 50%,#27C 50.1%,#8BE 100%);
+}
 
   
 
