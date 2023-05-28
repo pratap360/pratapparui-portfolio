@@ -527,13 +527,24 @@ body.dark .btn .custbtn {
         overflow: hidden;
         margin-bottom: var(--mb-2);
         z-index: 2;
-        margin: 15px 87px 15px 87px;
+        /* margin: 15px 87px 15px 87px; */
+        margin:5px 130px 38px 100px;
     }
 
     .container{
         padding: 10px 20px;
         margin-top: 50px;
         display: flex;
+    }
+
+    a.nav__logo{
+        padding-left: 150px;
+        display: inline-block;
+        text-align:center; 
+    }
+
+    div.text{
+        margin-top: 231px;
     }
 }
 
