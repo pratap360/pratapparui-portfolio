@@ -546,6 +546,15 @@ body.dark .btn .custbtn {
     div.text{
         margin-top: 231px;
     }
+
+    .btn{
+        margin: 50px 2rem 2rem 3rem;
+
+    }
+
+    .home__social{
+        margin: 50px;
+    }
 }
 
 
