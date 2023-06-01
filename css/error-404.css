@@ -27,7 +27,8 @@ body
     margin: 0;
     font-weight: 900;
     letter-spacing: 20px;
-    background: url(../resources/404nf2.jpg) center no-repeat;
+    background: url(../resources/lb_water.jpg) center no-repeat;
+   
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -35,7 +36,7 @@ body
 .container a
 {
     text-decoration: none;
-    background: #3742fa;
+    background: #1da1f2;
     color: #fff;
     padding: 12px 24px;
     display: inline-block;
@@ -48,7 +49,7 @@ body
 
 .container a:hover
 {
-    background: #3741fae0;
+    background: #3742fa;
 }
 
 
