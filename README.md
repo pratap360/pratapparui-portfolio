@@ -1,4 +1,7 @@
 # pratapparui-portfolio
 
-check the preview of it 
-https://www.codester.com/items/preview/36385/herry-personal-portfolio-resume-template
+check the preview Portfolio
+
+[Github pages](https://pratap360.github.io/pratapparui/) <br>
+[Netlify](https://pratapparui.me/)
+
