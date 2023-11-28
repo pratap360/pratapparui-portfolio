@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <meta name="author" content="Pratap Parui | Mr Parui Web Portfolio">
     <!-- ! change it while in devlopment -->
     <meta name="description" content="This is a Portfolio for Pratap Parui">
-    <meta name="keywords" content="frontend developer, frontend designer, frontend engineer, Graphic designer,ui designer, ux designer, ui ux designer, blogger, blogging,freelancing, technical writter, content writter">
+    <meta name="keywords"
+        content="frontend developer, frontend designer, frontend engineer, Graphic designer,ui designer, ux designer, ui ux designer, blogger, blogging,freelancing, technical writter, content writter">
 
 
 
@@ -16,27 +18,35 @@
     <!-- external css  -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- favicon imported  -->
-	<link rel="icon" href="resources/favicon.ico"/>
-     <!------------------ Box Icons ------------------>
-     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <!-- jquery cdn link -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link id='favicon' rel="shortcut icon" href="resources/Favicon/favicon.ico" type="image/x-png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/Favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/Favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="resources/Favicon/android-chrome-512x512.png">
+    <!------------------ Box Icons ------------------>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- jquery cdn link -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script defer src="/js/dynamicTitle.js"></script>
     <!-- magnific popup -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
-    
+
 </head>
+
 <body>
     <div class="Progress">
         <div class="Progress-indicator" data-module="scroll-indicator" data-scroll-indicator="'foo': 'bar'"></div>
     </div>
- <main>
-    <section class="home" id="home">
+    <main>
+        <section class="home" id="home">
 
-        <!-- Text Typing Animation in home page *started here* -->
-        <!-- <div class="header">
+            <!-- Text Typing Animation in home page *started here* -->
+            <!-- <div class="header">
             <div class="logo">Pratap Parui</div>
             <nav>
                 <ul>
@@ -47,83 +57,89 @@
                 </ul>
             </nav>
         </div> -->
-             <!------------------------ Header starts from here ----------------------->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-                <div>
-                    <a href="#" class="nav__logo">Pratap Parui</a>
-            
-                </div>
-            </div>
+            <!------------------------ Header starts from here ----------------------->
+            <header class="l-header">
+                <nav class="nav bd-grid">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                        <div>
+                            <a href="#" class="nav__logo">Pratap Parui</a>
 
-            
+                        </div>
+                    </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
+
+
+                    <div class="nav__menu" id="nav-menu">
+                        <div class="nav__close" id="nav-close">
+                            <i class='bx bx-x'></i>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__item"> <a href="" class="nav__link active"> Home </a></li>
+                            <li class="nav__item"> <a href="" class="nav__link"> About </a></li>
+                            <li class="nav__item"> <a href="" class="nav__link"> Blog </a></li>
+                            <li class="nav__item"> <a href="" class="nav__link"> Skills </a></li>
+                            <li class="nav__item"> <a href="" class="nav__link"> Services </a></li>
+                            <li class="nav__item"> <a href="" class="nav__link"> Works </a></li>
+                            <li class="nav__item"> <a href="" class="nav__link"> Contact </a></li>
+                            <!-- Dark mode switch -->
+                            <li class="nav__item">
+                                <input type="checkbox" class="l-d-mode" id="l-d-mode">
+                                <label for="l-d-mode" class="l-d-label">
+                                    <i class='bx bxs-moon'></i>
+                                    <i class='bx bxs-sun'></i>
+                                    <div class="ball"></div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!------------------------ Header ends from here ----------------------->
+
+
+            <div class="container bd-grid">
+                <div class="profile">
+                    <img src="/resources/home-page-img.png" alt="pratapparui" title="Pratap Parui">
+                </div>
+                <div class="text">
+                    <h1>Hello👋🏼 I'm <span class="typing"></span></h1>
+                    <p>I'm a Web Developer with extensive experience for over 5 years. <br> My expertise is to create
+                        and Websites design, graphic design and many more...</p>
+                    <div class="btn">
+                        <a href="#" class="custbtn">Project</a>
+                        <!-- <a download="resume/nihory resume.pdf" href="resume/nihory resume.pdf" class="button home__button">Download CV</a> -->
+                        <a href="#" class="button">Contact</a>
+                    </div>
+                    <div class="home__social">
+                        <a href="https://github.com/pratap360" class="home__social-link" target="_blank"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="https://instagram.com/mr_sumbuddy" class="home__social-link" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/pratap-parui-mr-sumbuddy/" class="home__social-link"
+                            target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.youtube.com/@pratap-parui" class="home__social-link" target="_blank"><i
+                                class='bx bxl-youtube'></i></a>
+                    </div>
                 </div>
 
-                <ul class="nav__list">
-                    <li class="nav__item"> <a href="" class="nav__link active"> Home </a></li>
-                    <li class="nav__item"> <a href="" class="nav__link"> About </a></li>
-                    <li class="nav__item"> <a href="" class="nav__link"> Blog </a></li>
-                    <li class="nav__item"> <a href="" class="nav__link"> Skills </a></li>
-                    <li class="nav__item"> <a href="" class="nav__link"> Services </a></li>
-                    <li class="nav__item"> <a href="" class="nav__link"> Works </a></li>
-                    <li class="nav__item"> <a href="" class="nav__link"> Contact </a></li>
-                    <!-- Dark mode switch -->
-                    <li class="nav__item"> 
-                        <input type="checkbox" class="l-d-mode" id="l-d-mode" >
-                        <label for="l-d-mode" class="l-d-label">
-                            <i class='bx bxs-moon'></i>
-                            <i class='bx bxs-sun' ></i>
-                            <div class="ball"></div>
-                        </label>
-                    </li>
-                </ul>
             </div>
-        </nav>
-    </header>
-    <!------------------------ Header ends from here ----------------------->
-
-       
-        <div class="container bd-grid">
-            <div class="profile">
-                <img src="/resources/home-page-img.png" alt="pratapparui" title="Pratap Parui">
-            </div>
-            <div class="text">
-                <h1>Hello👋🏼 I'm <span class="typing"></span></h1>
-                <p>I'm a Web Developer with extensive experience for over 5 years. <br> My expertise is to create and  Websites design, graphic design and many more...</p>
-                <div class="btn">
-                    <a href="#"class="custbtn">Project</a>
-                    <!-- <a download="resume/nihory resume.pdf" href="resume/nihory resume.pdf" class="button home__button">Download CV</a> -->
-                    <a href="#" class="button">Contact</a>
-                </div>
-                <div class="home__social">
-                    <a href="https://github.com/pratap360" class="home__social-link" target="_blank"><i class='bx bxl-github' ></i></a>                  
-                    <a href="https://instagram.com/mr_sumbuddy" class="home__social-link" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.linkedin.com/in/pratap-parui-mr-sumbuddy/" class="home__social-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.youtube.com/@pratap-parui" class="home__social-link" target="_blank"><i class='bx bxl-youtube' ></i></a>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+        </section>
         <!-- Text Typing Animation in home page *ends here* -->
 
         <section class="container">
 
         </section>
-</main>
+    </main>
 
 
-<!-- all javascript file are here  -->
+    <!-- all javascript file are here  -->
 
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <!-- <script src="js/anime-headling.js"></script> -->
-        <script src="/js/script.js"></script>
-        <script src="/js/progressbar.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <script src="js/anime-headling.js"></script> -->
+    <script src="/js/script.js"></script>
+    <script src="/js/progressbar.js"></script>
+</body>
+
 </html>
