@@ -28,9 +28,8 @@ body
     font-weight: 900;
     letter-spacing: 20px;
     background: url(../resources/lb_water.jpg) center no-repeat;
-   
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .container a
