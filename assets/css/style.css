@@ -64,7 +64,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-
+  --techstack:#b14d36c7;
   /**
    * typography
    */
@@ -83,6 +83,7 @@
   --fs-8: 11px;
 
   /* font-weight */
+  --fw-200: 200;
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
@@ -825,6 +826,11 @@ main {
   line-height: 1.6;
 }
 
+.ts {
+  color: var(--techstack); 
+  font-size: var(--fs-8);
+  font-weight: var(--fw-200);
+}
 
 /**
  * skills 

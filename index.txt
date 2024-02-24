@@ -238,3 +238,61 @@ Email address
 Your Message
 
 Send Message
+
+
+, so my specialties include quickly learning new skills and programming languages, problem solving, domain driven design, responsive design principles, website optimization. 
+
+So far I have HTML, CSS, JavaScript ,jQuery, SQL, Postgress, Materialize CSS , Bootstrap,Tailwind Css, W3Css ,Python, Flask , Firebase and Git/GitHub under my belt. I've started learning React Js and Node JS, at the time i finished i will start with MongoDB, and Express JS , Typescript also I'm still enthusiastically grabbing onto any other programming languages, frameworks, or principles I can integrate into the coding web in my head.
+
+I am also interested in cloud technologies and learning Google Cloud Platform, AWS and Microsoft Azure Still learning and growing in that field. 
+
+I can Define myself as a Hard worker, Focused, Determination, Passionate, Multitasker ,Highly motivated person, Honest ,Dependable, Reliable and Trustworthy ,Patience and Persistence. While working on projects in college and internships, I discovered myself as a creative person with good problem-solving and critical thinking skills with a Designing skills. Desire to learn something new every day, and looking for great opportunities to growth in Carrier.
+
+Also I’m experienced in Editing\Designing Such as Adobe Photoshop, Adobe Illustrator , Adobe XD, Figma, Inkscape, Canva and Content creation such as article writing , blogging , multimedia (photo, audio video),Search Engine Optimization (SEO) also good Knowledge about digital marketing, also I love to capture the most precious moments and share them on social sites.
+
+-----
+
+My strengths are that of quickly acquiring new skills and programming languages, problem-solving, domain-driven design, responsive design principles and website optimization.
+
+HTML,CSS,Javascript,jQuery,SQL,Postrgress ,Materialize CSS and Bootstrap,Tailwind Css,W3Css ,Python ,Flask ,Firebase,Git/Github are a few of the technologies under my belt so far but I started learning React Js and Node JS where after i finish with it i will start with MongoDB and Express JS as well as Typescript in addition to that I’m still zealously acquiring whatever other programming languages, frameworks or principles can be absorbed into the code web in my mind.
+
+
+I am also interested in cloud technologies and learning Google Cloud Platform, AWS and Microsoft Azure Still learning and growing in that field.
+
+Hardworking, focused, determined, passionate person, multitasker , highly motivated individual , honest person , dependable individual , reliable person , trustworthy employee , patient character and persistent hard work. By working on projects during college and internships I found out that I am creative with designing skills as well as good problem solving ability and critical thinking skills. 
+
+This is because of my desire to learn something new everyday and great opportunities to growth in career path. 
+
+Also I’m experienced in Editing\Designing Such as Adobe Photoshop; Adobe Illustrator; Adobe XD; Figma; Inkscape; Canva and Content creation such as article writing ; blogging ; multimedia (photo, audio video);Search Engine Optimization (SEO) also good Knowledge about digital marketing, also I love to capture the most precious moments and share them on social sites.
+
+
+a complete one stop solution 
+
+https://www.amanjain.tech
+
+Let's Work together 
+However, if you have any other requests or questions, don't hesitate to contact me...
+
+
+<ion-icon name="sparkles-outline"></ion-icon>
+<ion-icon name="sunny-outline"></ion-icon>
+<ion-icon name="ribbon-outline"></ion-icon>
+<ion-icon name="star-half-outline"></ion-icon>
+<ion-icon name="star-half-outline"></ion-icon>
+<ion-icon name="toggle-outline"></ion-icon>
+<ion-icon name="rocket-outline"></ion-icon> 
+<ion-icon name="push-outline"></ion-icon>
+<ion-icon name="moon-outline"></ion-icon>
+<ion-icon name="invert-mode-outline"></ion-icon>
+<ion-icon name="golf-outline"></ion-icon>
+<ion-icon name="contrast-outline"></ion-icon>
+<ion-icon name="code-working-outline"></ion-icon>
+<ion-icon name="code-outline"></ion-icon>   
+<ion-icon name="construct-outline"></ion-icon>  
+<ion-icon name="share-outline"></ion-icon>
+
+https://icons8.com/icons/set/design--static--orange
+
+https://www.flaticon.com/free-icons/design?word=design&color=orange
+
+

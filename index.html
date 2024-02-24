@@ -28,6 +28,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script defer src="/js/dynamicTitle.js"></script>
 </head>
 
 <body>
@@ -179,10 +181,14 @@
           </li>
 
           <li class="navbar-item">
+          <!-- ! need to change this to skills -->
+            <!-- <button class="navbar-link" data-nav-link>Skills</button> -->
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
+            <!-- ! need to change this to projects -->
+            <!-- <button class="navbar-link" data-nav-link>Projects</button> -->
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
@@ -217,9 +223,10 @@
         </header>
 
         <section class="about-text">
-          <p>working in  progress</p>
-          <p>sample text</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fuga illo explicabo nam aspernatur totam quo eligendi placeat, eum reiciendis possimus ipsa facilis architecto qui recusandae cumque fugiat repellat quas provident magni iure? Nihil, eum? Nam debitis eius in aliquam. Illo voluptatem amet distinctio autem nesciunt accusantium. Quaerat, a quae.</p>
+          <h4>Hey 👋🏻 Folks Myself Pratap Parui,</h4><br>
+          <p>I'm Frontend Developer & UI/UX Designer From Mumbai,India , working as a Backend Support Enginner in <b><i>Datamatics</i>
+          </b></p>
+
           <!-- <p>
             I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
             I enjoy
@@ -242,7 +249,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">My Area of Expertise</h3>
 
           <ul class="service-list">
 
@@ -286,7 +293,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">UI / UX</h4>
 
                 <p class="service-item-text">
                   Professional development of applications for iOS and Android.
@@ -515,11 +522,6 @@
         </section> -->
 
       </article>
-
-
-
-
-
       <!--
         - #RESUME
       -->
@@ -527,11 +529,51 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Skills</h2>
         </header>
 
-        <section class="timeline">
+        <!-- Experience -->
+        <section class="timeline"> 
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
 
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Consultant | Datamatics</h4>
+              <span>July 2023 — Present</span>
+              <p class="timeline-text">
+                On Side Project for <b>"SEBI"</b> as a Clients & Working as a Backend Support Enginner & look into the client issue & getting reslove them, Monitor the site ,looking for the bugs ,full testing of the site & deploying it.
+                <!-- as well as getting handling the frontend side of the project. -->
+              </p>
+              <p class="ts"><i>Tech stack use : Java, Angular ,Spring Boot, My Sql</i></p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"> Trainee | Datamatics</h4>
+              <span>May 2022 - July 2023</span>
+              <p class="timeline-text">
+              As getting my 1st On site Project as a <b>"RBI"</b> Client & Get to know about the company and its working culture. Also, get some hands on some Frontend side / on site project & handling some clients side issue & fixing them. asking for the feedback from the clients & working on it.
+              </p>
+              <p class="ts"><i>Tech stack use : Java, Angular ,Spring Boot, My Sql</i></p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"> Internship | Microsoft</h4>
+              <span>Feb 2022 - Apr 2022</span>
+              <p class="timeline-text">
+                In Future Ready Talent Program got an oppournity to work with Microsoft & got hand on Experience in Microsoft Azure Cloud services & it useses. Also, I have worked on some projects related to Azure Cloud. 
+              </p>
+              <p class="ts"><i>Tech stack use : Github, Azure, Vs Code , MS Teams</i></p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Education -->
+        <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
@@ -541,114 +583,90 @@
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
+              <h4 class="h4 timeline-item-title">Naresee Monjee College | Mumbai</h4>
+              <span>2019 — 2022</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Completed Bachelor's degree in an Information Technology & securing an <b>'A'</b> Grade
               </p>
 
             </li>
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
+              <h4 class="h4 timeline-item-title">Divine Providence Jr. College | Mumbai</h4>
+              <span>2017 — 2019</span>
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Completed Higher Secondary Education in Commerce Stream & Securing a <b>'81%'</b> Percentage
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
+              <h4 class="h4 timeline-item-title">Mother Mary Eng High school | Mumbai</h4>
+              <span>2005 — 2017</span>
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Completed Basic Schooling & securing <b>'72%'</b> Percentage in 10th Standard.
               </p>
-
             </li>
-
           </ol>
-
         </section>
 
+        <!-- Extra curriculm & Achivements -->
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Extra curriculm & Achivements</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
+              <h4 class="h4 timeline-item-title">Content Creator | Youtube </h4>
+              <span>2022 - Present</span>
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                creating Awesome content unboxing the tech gadgets & attending the tech events & doing vlogs casually.
+                <!-- creating Awesome content related to the technology & some of the coding stuff & also some of the vlogs. -->
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
+              <h4 class="h4 timeline-item-title">Blogging</h4>
+              <span>2018 - Present</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Writing articles related to the technology updates & some of the coding as well as designing stuff.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
+              <h4 class="h4 timeline-item-title">Create High-Fidelity Designs & Prototypes in Figma & Adobe XD |Grow with Google on Coursera</h4>
+              <span>Feb 2023</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Skills: Figma (Software) · Design Systems · User Experience (UX) · User Interface Prototyping · User Interface Design · Wireframing · Prototyping · Web Design · Adobe XD · Responsive Web Design.
               </p>
+            </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">React | META</h4>
+              <span>Dec 2022</span>
+              <p class="timeline-text">
+                Skills: Web Applications · Application Development · Web Application Development · Website Building · React.js · Front-End Development · Responsive Web Design
+              </p>
             </li>
 
           </ol>
-
         </section>
 
+
         <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="terminal-outline"></ion-icon>
+              <!--* alternative icon -->
+              <!-- <ion-icon name="sparkles-outline"></ion-icon> -->
+              <!-- <ion-icon name="color-palette-outline"></ion-icon> -->
+            </div>
+            <h3 class="h3"> My skills</h3>
+          </div>
           <ul class="skills-list content-card">
 
             <li class="skills-item">
@@ -707,6 +725,11 @@
 
         </section>
 
+
+      
+
+
+
       </article>
 
 
@@ -720,7 +743,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Project</h2>
         </header>
 
         <section class="projects">
@@ -1153,6 +1176,10 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
+        <section class="about-text">
+
+        <h4>Looking to connect ? Having Any Questons ? I'm always open for a conversation and I'd love to hear from you.</h4>
+      </section>
 
         <section class="mapbox" data-mapbox>
           <figure>
@@ -1201,7 +1228,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./js/script.js"></script>
 
   <!--
     - ionicon link
