@@ -1,6 +1,6 @@
 - [X] change the about page
     - [-] add info in it
-    - [] change the png of expertise
+    - [x] change the png of expertise
     - [] add the testimony & clients coming soon
  
 - [-] change in the resume page
@@ -15,8 +15,8 @@
   - [] add some personl project like lhs & clg projects
 
 - [] do connect the backend for the contact page
-  - [] add the title text feild
+  - [x] add the title text feild
 
+- [x] update the 404 page 
 - [] add the light mode functionalies 
 - [] add all the trackers like gsc , g4a , bing tracker
-- [] update the 404 page 

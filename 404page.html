@@ -11,28 +11,58 @@
     <meta name="keywords"
         content="frontend developer, frontend designer, frontend engineer, Graphic designer,ui designer, ux designer, ui ux designer, blogger, blogging,freelancing, technical writter, content writter">
 
+    <!--favicon-->
+    <link id='favicon' rel="shortcut icon" href="resources/Favicon/favicon.ico" type="image/x-png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/Favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/Favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="resources/Favicon/android-chrome-512x512.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="resources/favicon.ico" />
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/404style.css">
 
-    <!------------------ External CSS ------------------>
-    <link rel="stylesheet" href="css/error-404.css">
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script defer src="/js/dynamicTitle.js"></script>
+
 </head>
 
 <body>
-    <!--------------------------- 404 comming soon starts --------------------->
-    <section class="page_404">
-        <div class="container">
-            <h2>Oops! page not found.</h2>
-            <h1>404</h1>
-            <p>We can't find the page you're looking for.</p>
-            <a href="index.html">Let's Go Home</a>
+    <main>
+        <!--- #main-content-->
+        <div class="main-content">
+            <!--- #NAVBAR-->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>404 Not Found 🤔</button>
+                    </li>
+                </ul>
+            </nav>
+            <article class="err  active" data-page="err">
+                <header>
+                    <h2 class="h2 article-title">Not Found🤔</h2>
+                </header>
+                <section class="txt404">
+                    <section class="page_404">
+                        <h2>Oops! page not found.</h2>
+                        <h1>404</h1>
+                        <p>We can't find the page you're looking for.</p>
+                        <a class="btn" href="index.html">Let's Go Home</a>
+                    </section>
+                </section>
+            </article>
         </div>
-    </section>
-
-
-
-    <!--------------------------- 404 comming soon ends --------------------->
+    </main>
 </body>
 
 </html>
