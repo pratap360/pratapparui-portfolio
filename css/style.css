@@ -840,6 +840,9 @@ main {
 
 .skills-list { padding: 20px; }
 
+.skill-img {
+  display: inline-block;
+}
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
