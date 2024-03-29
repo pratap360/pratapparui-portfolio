@@ -4,7 +4,7 @@
     - [x] add the testimony & clients coming soon
  
 - [x] change in the resume page
-  - [x] update the detials in Education
+  - [x] update the detail in Education
   - [x] update the experince
   - [x] keep the experince section at top
   - [x] added some extra edus & update it
@@ -18,8 +18,8 @@
   - [x] add the title text feild
 
 - [x] update the 404 page 
-- [ ] add extras social media icons if required
-- [] add the light mode functionalies 
+- [x] add extras social media icons if required
+- [-] add the light mode functionality 
 - [] add all the trackers like gsc , g4a , bing tracker
 
 
@@ -34,3 +34,7 @@
    -  ssh / bash
    -  elastic search
    -  kibana
+  
+
+- my all projects till date
+  - 

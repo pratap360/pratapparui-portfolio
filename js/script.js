@@ -157,3 +157,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// to change dark mode on click
+const inp = document.getElementById('inp');
+
+inp.addEventListener('change', () => {
+	document.body.classList.toggle('light');
+});
