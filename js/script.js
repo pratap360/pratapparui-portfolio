@@ -160,8 +160,54 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 // to change dark mode on click
-const inp = document.getElementById('inp');
+// const inp = document.getElementById('inp');
 
-inp.addEventListener('change', () => {
-	document.body.classList.toggle('light');
-});
+// inp.addEventListener('change', () => {
+// 	document.body.classList.toggle('light');
+// });
+
+
+function DarkLightMode() {
+  const inp = document.getElementById('inp');
+  var element = document.body;
+
+  // On page load, set the mode to the one stored in localStorage
+  const savedMode = localStorage.getItem('mode');
+  if (savedMode) {
+      element.classList[savedMode === 'light' ? 'add' : 'remove']('light');
+      inp.checked = savedMode === 'light';
+  }
+
+  inp.addEventListener('change', () => {
+    element.classList.toggle('light');
+
+    // Save the current mode to localStorage
+    if(element.classList.contains("light")){
+      localStorage.setItem('mode', 'light');
+  } else {
+      localStorage.setItem('mode', 'dark');
+  }
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Call the DarkLightMode function at the end of your script
+DarkLightMode();
+
+
