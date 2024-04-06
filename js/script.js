@@ -166,6 +166,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // 	document.body.classList.toggle('light');
 // });
 
+// ! LATEST LIGHT DARK MODE CODE 
 
 function DarkLightMode() {
   const inp = document.getElementById('inp');

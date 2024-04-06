@@ -14,24 +14,29 @@
     --smoke-white-2: hsl(240, 12%, 85%);
     --white-smoke: hsl(0, 0%, 96%);
     --light-onyx: hsl(240, 1%, 70%);
-
+    --vegas-gold: hsl(19, 58%, 52%);
+    --dark-gray: hsl(0, 0%, 26%);
+    --dark-gray-70: hsla(0, 0%, 30%, 0.7);
+    --black-1: hsl(0, 0%, 0%);
+    --black-2: hsl(0, 0%, 12%);
+    /* --light-onyx: hsl(0, 0%, 85%); */
 
     /* predefine gradient */
     
-  --bg-gradient-light-onyx: linear-gradient(
+    --bg-gradient-light-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 3%, 72%) 3%, 
-    hsl(0, 0%, 70%) 97%
-  );
-  --bg-gradient-light-jet: linear-gradient(
+    hsl(0, 0%, 75%) 3%, 
+    hsl(0, 0%, 85%) 97%
+    );
+    --bg-gradient-light-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 6%, 82%, 0.251) 0%, 
-    hsla(240, 4%, 73%, 0) 100%
-  ), hsl(240, 6%, 87%);
+    hsla(0, 0%, 100%, 0.432) 0%, 
+    hsla(0, 0%, 75%, 0.055) 100%
+    ), hsl(0, 0%, 90%);
     --border-gradient-light-onyx: linear-gradient(
         to bottom right, 
-        hsl(240, 1%, 70%) 0%, 
-        hsl(240, 1%, 70%) 50%
+        hsl(0, 0%, 77%) 10%, 
+        hsl(0, 0%, 87%) 50%
     );
 }
 
@@ -105,5 +110,143 @@
 .light .sidebar,
 .light article {
     background: var(--white-smoke);
-   
 }
+
+.light .navbar{
+    background: hsla(16.3, 55.6%, 49.4%, 0.4)
+}
+
+.light .navbar-link{
+    color : var(--dark-gray);
+}
+
+.light .navbar-link:hover,
+.light .navbar-link:focus { color: var(--dark-gray-70); }
+
+.light .navbar-link.active { 
+    color: var(--vegas-gold); 
+}
+
+.light .h2,
+.light .h3,
+.light .h4,
+.light .h5 { 
+    color : var(--black-2);
+}
+
+.light .info-content .name{
+    color: var(--black-2);
+}
+
+.light .contact-info :is(.contact-link, time, address) {
+    color: var(--black-2);
+}
+
+.light .project-title ,
+.light .form-input,
+.light .modal-close-btn {
+    color: var(--black-2);
+}
+
+
+.light .contact-title,
+.light .social-item .social-link,
+.light .modal-content time,
+.light .project-category,
+.light .blog-meta :is(.blog-category, time),
+.light .blog-meta .dot,
+.light .filter-item button:hover ,
+.navbar-link:focus{
+    color: var(--dark-gray-70);
+}
+
+.light .social-item .social-link:hover ,
+.light .navbar-link,
+.light .about-text,
+.light .service-item-text,
+.light .testimonials-text,
+.light .modal-content p,
+.light .timeline-text,
+.light .skill .title-wrapper data,
+.light .filter-select,
+.light .select-item button ,
+.light .blog-text,
+.light .filter-item button {
+    color: var(--dark-gray);
+}
+
+
+.light .content-card::before,
+.light .info_more-btn::before,
+.light .service-item::before,
+.light .form-btn:disabled:hover::before ,
+.light .form-btn::before{
+    background: var(--bg-gradient-light-jet);
+}
+
+
+.light .icon-box{
+    background:var(--border-gradient-light-onyx);
+}
+
+.light .icon-box::before {
+    background: var(--white-smoke);
+}
+
+
+.light .content-card,
+.light .info_more-btn,
+.light .service-item,
+.light .blog-post-item > a ,
+.light .form-btn,
+.light .form-btn:disabled:hover{
+    background:var(--border-gradient-light-onyx);
+}
+
+.light .blog-post-item > a::before ,
+.light .icon-box::before{
+    background:var(--smoke-white-1) ;
+}
+
+
+.light .avatar-box{
+    background: var(--bg-gradient-light-onyx);
+}
+
+/* .light .info-content .title,  */
+.light .modal-close-btn {
+    background: var(--light-onyx);
+}
+
+.light .filter-select {
+    background: none;
+}
+
+.light .select-list{
+    background: var(--smoke-white-2)
+}
+
+
+.light .select-item button{
+    background: var(--smoke-white-2)
+
+}
+
+.light .select-item button:hover{
+    --smoke-white-2:hsl(20, 55%, 50%);
+}
+
+
+body.light::-webkit-scrollbar-track { background: var(--white-smoke); }
+
+body.light::-webkit-scrollbar-thumb {
+    border: 6px solid var(--white-smoke);
+    background: var(--vegas-gold);
+    /* border: 5px solid var(--vegas-gold); */
+    /* background: hsla(19, 75%, 47%, 0.884);  */
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.26),
+                inset -1px -1px 0 hsla(0, 0%, 100%, 0.26);
+}
+
+body.light::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.212); }

@@ -316,8 +316,9 @@ I'm a dedicated and adaptable individual with a robust skill set in web developm
 
  in editing and designing using tools like Adobe Photoshop, Illustrator, XD, Figma, and Canva, along with content creation skills spanning article writing, blogging, and multimedia production, I bring a comprehensive skill set to the table. Furthermore, my understanding of SEO, digital marketing, and social media engagement enhances my ability to deliver impactful results.
 --------------------------
+complete area 
 
-
+✔1
     if(localStorage.getItem('dark-mode')){
         document.body.classList.add('dark-mode');
     }
@@ -331,12 +332,13 @@ function lightDarkMode() {
     }
 }
 
---------------------------
+✔2
+nav bar hsla code for light mode -> hsla(16.3, 55.6%, 49.4%, 0.4)
 
- var(--smoky-black) -> selection,body,body::-webkit-scrollbar-track,body::-webkit-scrollbar-thumb\
+.navbar-link ->   color: var(--light-gray);
 
-----------------------------------
 
+✔3
  --white-smoke -> 
   background: var(--white-smoke);
 
@@ -353,7 +355,35 @@ article {
   z-index: 1;
 }
 
-var(--onyx) -> .avatar-box , .info-content .title , .has-scrollbar::-webkit-scrollbar-track
-.modal-close-btn 
+✔4 
+var(--white-2) -> h2 se h5 tak , .info-content .name , .contact-info :is(.contact-link, time, address) , .modal-close-btn , .project-title , .form-input
 
-nav bar hsla code for light mode -> hsla(16.3, 55.6%, 49.4%, 0.4)
+✔5
+var(--light-gray-70) -> .contact-title, .social-item .social-link , .navbar-link:focus , .modal-content time , .project-category , .blog-meta :is(.blog-category, time) , .blog-meta .dot ,   .filter-item button
+
+✔6
+var(--light-gray) -> .social-item .social-link:hover ,
+.navbar-link,.about-text,.service-item-text,.testimonials-text,
+.modal-content p,.timeline-text,.skill .title-wrapper data,
+.filter-select,.select-item button ,.blog-text, .filter-item button 
+
+✔7
+var(--bg-gradient-jet) -> .content-card::before ,.info_more-btn::before, .service-item::before , .form-btn::before , .form-btn:disabled:hover::before
+
+✔8
+var(--border-gradient-onyx) ->
+.icon-box , .content-card  , .info_more-btn , .service-item  , .blog-post-item > a , .form-btn , .form-btn:disabled:hover
+
+
+✔9
+var(--eerie-black-1) -> .blog-post-item > a::before 
+.icon-box::before
+
+✔10
+ var(--smoky-black) -> selection,body,body::-webkit-scrollbar-track,body::-webkit-scrollbar-thumb\
+
+✔11
+var(--onyx) -> .avatar-box , .info-content .title , .has-scrollbar::-webkit-scrollbar-track
+.modal-close-btn --light-onyx
+
+

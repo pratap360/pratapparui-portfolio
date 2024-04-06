@@ -155,8 +155,8 @@ html { font-family: var(--ff-poppins); }
 body { 
   background: var(--smoky-black); 
   overflow-x: hidden;
-  display: grid;
-  /*   display: flex; */
+  /* display: grid; */
+  /* display: flex; */
 }
 
 
@@ -1802,9 +1802,14 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: auto; }
+  /* .sidebar, article { width: auto; } */
 
-  article { min-height: 100%; }
+  .sidebar{ width: 300px; }
+  
+  article { 
+    min-height: 100%;
+    width: auto;  
+    }
 
 
 
@@ -1834,7 +1839,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    position: sticky;
+    position: sticky !important;
     top: 60px;
     max-height: max-content;
     height: 100%;
@@ -1891,8 +1896,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
-
-
-
-
+/* light mode in another css file  */
