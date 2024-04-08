@@ -236,6 +236,20 @@
     --smoke-white-2:hsl(20, 55%, 50%);
 }
 
+.light .testimonials-avatar-box{
+    background: var(--bg-gradient-light-onyx);
+
+}
+
+.light .testimonials-modal{
+    background: var(--smoke-white-2);
+}
+
+.light .modal-avatar-box{
+    background: var(--bg-gradient-light-jet);
+}
+
+
 
 body.light::-webkit-scrollbar-track { background: var(--white-smoke); }
 
