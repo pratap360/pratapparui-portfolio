@@ -160,8 +160,49 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
-// model function for portfolio section 👇🏼
 
+// * model script for Projects section 👇🏼
+
+// Projects variables
+const projectsItem = document.querySelectorAll("[data-project-item]");
+
+const poverlay = document.querySelector("[data-poverlay]");
+
+const mprojectCategory = document.querySelector("[data-model-project-category]");
+// const mprojectsThumbnail = document.querySelector("[data-model-project-thumbnail]");
+const mprojectsContainer = document.querySelector("[data-modal-project]");
+const mprojectsCloseBtn = document.querySelector("[data-modal-projectclose-btn]");
+const mprojectName = document.querySelector("[data-modal-project-name]");
+const mprojectInfo = document.querySelector("[data-model-project-info]");
+
+// modal toggle function
+const projectsModalFunc = function () {
+  mprojectsContainer.classList.toggle("active");
+  poverlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < projectsItem.length; i++) {
+
+  projectsItem[i].addEventListener("click", function () {
+
+    // mprojectsThumbnail.src = this.querySelector("[data-project-thumbnail]").src;
+    // mprojectsThumbnail.alt = this.querySelector("[data-project-thumbnail]").alt;
+
+    mprojectName.innerHTML = this.querySelector("[data-project-name]").innerHTML;
+    mprojectCategory.innerHTML = this.querySelector("[data-project-category]").innerHTML;
+
+    mprojectInfo.innerHTML = this.querySelector("[data-project-info]").innerHTML;
+
+    projectsModalFunc();
+
+  });
+
+}
+
+// add click event to modal close button
+mprojectsCloseBtn.addEventListener("click", projectsModalFunc);
+poverlay.addEventListener("click", projectsModalFunc);
 
 
 

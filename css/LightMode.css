@@ -249,7 +249,9 @@
     background: var(--bg-gradient-light-jet);
 }
 
-
+.light [data-model-project-info]{
+    color: var(--black-2);  
+}
 
 body.light::-webkit-scrollbar-track { background: var(--white-smoke); }
 
