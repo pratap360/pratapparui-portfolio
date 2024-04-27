@@ -1896,12 +1896,5 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-[data-project-info] {
-  display: none;
-}
-
-[data-model-project-info]{
-  color: var(--white-2);  
-}
 
 /* light mode in another css file  */

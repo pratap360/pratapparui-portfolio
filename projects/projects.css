@@ -1,0 +1,155 @@
+/* * project heading  */
+
+.h2 { 
+    font-size: 30px; 
+}
+
+.h3 { 
+    font-size: 25px;
+}
+
+.h4 { 
+    font-size: 18px; 
+}
+
+.projectTitle {
+    position: relative;
+    padding-bottom: 7px;
+}
+.projectTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+}
+
+.projectTitle { 
+    margin-bottom: 30px; 
+}
+
+/* .projectTitle {
+    font-weight: var(--fw-600);
+    padding-bottom: 15px;
+} */
+
+.projectTitle::after {
+    width: 40px;
+    height: 5px;
+}
+
+
+
+/* * form btn for back btn */
+
+.back-btn {
+    position: relative;
+    width: 100%;
+    background: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 12px;
+    border-radius: 14px;
+    font-size: var(--fs-6);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+    transition: var(--transition-1);
+}
+
+.back-btn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+    transition: var(--transition-1);
+}
+
+.back-btn ion-icon { font-size: 16px; }
+
+.back-btn:hover { background: var(--bg-gradient-yellow-1); }
+
+.back-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+
+.back-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.back-btn:disabled:hover { background: var(--border-gradient-onyx); }
+
+.back-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+
+.light .back-btn:disabled:hover::before ,
+.light .back-btn::before{
+    background: var(--bg-gradient-light-jet);
+}
+.light .back-btn,
+.light .back-btn:disabled:hover{
+    background:var(--border-gradient-light-onyx);
+}
+
+/* * about text to about project  */
+
+.about-project {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
+
+
+.light .about-project{
+    color: var(--dark-gray);
+}
+
+
+/* .project-name { margin-bottom: 35px; } */
+.project-name-title { margin-bottom: 20px; }
+
+/* .project-info { margin-bottom: 15px; } */
+.project-info-title { margin-bottom: 20px; }
+
+/* ! btn -> class="back-btn" to se & view github link */
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+  }
+  
+  .form-btn {
+    margin-bottom: 10px; /* Add space between buttons vertically */
+  }
+  
+  .form-btn ion-icon {
+    color: var(--orange-yellow-crayola); /* Change the color of ion-icon */
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .button-container {
+      flex-direction: row; /* Switch to horizontal layout on screens wider than 600px */
+      justify-content: center; /* Center the buttons horizontally */
+    }
+  
+    .form-btn {
+      margin-bottom: 0; /* Remove bottom margin */
+      margin-right: 10px; /* Add space between buttons horizontally */
+    }
+  
+    .form-btn:last-child {
+      margin-right: 0; /* Remove margin from the last button */
+    }
+  }
+  
+

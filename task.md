@@ -37,8 +37,8 @@
   
 
 - my all projects till date
-  - 
-
+  - [-]add all the pop up for all projects.
+s
 ### new bug or issue are genrating while do change
  - [x] fix the portfolio page not fitting in mobile devices
  - [x] side bar is not previous level sticky side bar
