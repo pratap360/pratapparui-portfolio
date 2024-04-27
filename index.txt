@@ -620,3 +620,50 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 
+supabase code mine 👇🏼👇🏼
+
+
+const { createClient } = supabase
+
+// just add the keys 
+
+supabase = createClient("https://cmfacgmrvdtovroxedbq.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtZmFjZ21ydmR0b3Zyb3hlZGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQyMTc4MzUsImV4cCI6MjAyOTc5MzgzNX0.rARfkTK-stOvTFNe7ihs3dp1DE5J8udGPEcBIhu83Y0")
+
+
+const form = document.querySelector("#contact")
+
+
+form.addEventListener('submit', async (event) => {
+    event.preventDefault()
+
+    const contactInput = form.querySelectorAll('input ,textarea')
+
+    let submission = {}
+
+    contactInput.forEach(element => {
+        const { value, name } = element
+        if (value) {
+            submission[name] = value
+        }
+    })
+
+    console.log(submission)
+
+    const { error, data } = await supabase.from('contact-form').insert([submission], { returning: 'minimal' })
+    console.log(error, data)
+    // return onclick=submit();
+    // error handling 
+    if (error) {
+        alert('facing some issue in code')
+    } else {
+        alert('Your Prayer is Accepted')
+    }
+
+
+    // reset the full form 
+    // prayerInput.forEach(element => element.value = '')
+
+
+    // Redirect to a new page
+    // window.location.href = "../pages/success.html";
+})

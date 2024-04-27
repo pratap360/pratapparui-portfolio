@@ -44,3 +44,42 @@ s
  - [x] side bar is not previous level sticky side bar
  - [x] do update the about me para 
  - [-] navbar active color issue
+
+test
+tesssst@tet.com
+test msg
+this is test msg
+
+-----
+
+// Function to handle form submission
+async function handleSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    const fullname = formData.get('fullname');
+    const email = formData.get('email');
+    const msgTitle = formData.get('msgTitle');
+    const message = formData.get('message');
+
+    // Save form data to Supabase table
+    try {
+        const { data, error } = await supabase.from('contact-form').insert([{ fullname, email, msgTitle, message }]);
+
+        if (error) {
+            console.error('Error saving message:', error.message);
+            return;
+        }
+
+        console.log('Message saved successfully:', data);
+        // form.reset();
+         // Reset the form after successful submission
+    } catch (error) {
+        console.error('Error saving message:', error.message);
+    }
+}
+
+// Event listener for form submission
+document.getElementById('contact').addEventListener('submit', handleSubmit);
