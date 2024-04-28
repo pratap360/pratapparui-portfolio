@@ -1,6 +1,10 @@
+
 const { createClient } = supabase
 
-supabase = createClient("https://cmfacgmrvdtovroxedbq.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtZmFjZ21ydmR0b3Zyb3hlZGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQyMTc4MzUsImV4cCI6MjAyOTc5MzgzNX0.rARfkTK-stOvTFNe7ihs3dp1DE5J8udGPEcBIhu83Y0") 
+const supabaseUrl = 'https://cmfacgmrvdtovroxedbq.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtZmFjZ21ydmR0b3Zyb3hlZGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQyMTc4MzUsImV4cCI6MjAyOTc5MzgzNX0.rARfkTK-stOvTFNe7ihs3dp1DE5J8udGPEcBIhu83Y0'
+const supabase = createClient(supabaseUrl, supabaseKey)
+
 
 const Contact = document.querySelector("#contact")
 
@@ -20,10 +24,10 @@ Contact.addEventListener('submit', async (event) => {
 
     console.table(submission)
 
-    const { error } = await supabase
+    const { error,data } = await supabase
     .from('contactform')
     .insert([submission], { returning: 'minimal' });
-      console.log(error)
+      console.log(error,data)
     // return onclick=submit();
     // error handling 
     if (error) {
