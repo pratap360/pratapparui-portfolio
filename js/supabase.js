@@ -1,70 +1,68 @@
+const { createClient } = supabase;
+document.addEventListener('DOMContentLoaded', async function () {
+    const supabaseUrl = 'https://cmfacgmrvdtovroxedbq.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtZmFjZ21ydmR0b3Zyb3hlZGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQyMTc4MzUsImV4cCI6MjAyOTc5MzgzNX0.rARfkTK-stOvTFNe7ihs3dp1DE5J8udGPEcBIhu83Y0';
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
-const { createClient } = supabase
+    const Contact = document.querySelector("#contact");
 
-const supabaseUrl = 'https://cmfacgmrvdtovroxedbq.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtZmFjZ21ydmR0b3Zyb3hlZGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQyMTc4MzUsImV4cCI6MjAyOTc5MzgzNX0.rARfkTK-stOvTFNe7ihs3dp1DE5J8udGPEcBIhu83Y0'
-const supabase = createClient(supabaseUrl, supabaseKey)
+    Contact.addEventListener('submit', async (event) => {
+        event.preventDefault();
 
+        const prayerInput = Contact.querySelectorAll('input, textarea');
 
-const Contact = document.querySelector("#contact")
+        const submission = {};
 
-Contact.addEventListener('submit', async (event) => {
-    event.preventDefault()
+        prayerInput.forEach(element => {
+            const { value, name } = element;
+            if (value) {
+                submission[name] = value;
+            }
+        });
 
-    const prayerInput = Contact.querySelectorAll('input, textarea')
+        console.table(submission);
 
-    const submission = {}
+        const { error, data } = await supabase
+            .from('Contact')
+            .insert([submission], { returning: 'minimal' });
 
-    prayerInput.forEach(element => {
-        const { value, name } = element
-        if (value) {
-            submission[name] = value
+        console.log(error, data);
+
+        if (error) {
+            alert('facing some issue in Backend ! Warning :: Not submitted');
+        } else {
+            alert("Thank you for contacting ! I'll get back to you soon.");
         }
-    })
+        prayerInput.forEach(element => element.value = '')
+    });
+});
+// if (error){
+//     // alert("lafada kiya hai bahi")
+//     $('#submit').on('click', function(e){
+//         // e.preventDefault();
+//         // Open popup modal
+//         $('#error').modal('open');
+//       });
+// }else{
+//     // Add click event listener to submit button
+//   $('#submit').on('click', function(e){
+//     // e.preventDefault();
+//     // Open popup modal
+//     $('#Success').modal('open');
+//   });
+// }
 
-    console.table(submission)
-
-    const { error,data } = await supabase
-    .from('contactform')
-    .insert([submission], { returning: 'minimal' });
-      console.log(error,data)
-    // return onclick=submit();
-    // error handling 
-    if (error) {
-        alert('facing some issue in code')
-    } else {
-        alert('Your message is Accepted')
-    }
-})
-
-
-    // if (error){
-    //     // alert("lafada kiya hai bahi")
-    //     $('#submit').on('click', function(e){
-    //         // e.preventDefault();
-    //         // Open popup modal
-    //         $('#error').modal('open');
-    //       });
-    // }else{
-    //     // Add click event listener to submit button
-    //   $('#submit').on('click', function(e){
-    //     // e.preventDefault();
-    //     // Open popup modal
-    //     $('#Success').modal('open');
-    //   });
-    // }
-
-    // reset the full form 
-    // prayerInput.forEach(element => element.value = '')
+// reset the full form 
+// prayerInput.forEach(element => element.value = '')
 
 
-    //? Redirect to a new page
-    // const successPagePath = "/pages/success.html";
+//? Redirect to a new page
+// const successPagePath = "/pages/success.html";
 
-    // window.location.href = successPagePath;
+// window.location.href = successPagePath;
 
-    //  just update link after fully live 
-    // window.location.href = "http://127.0.0.1:5500/pages/success.html";
+//  just update link after fully live 
+// window.location.href = "http://127.0.0.1:5500/pages/success.html";
 
 
 

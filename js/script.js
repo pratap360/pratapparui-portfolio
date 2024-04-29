@@ -136,6 +136,24 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 
+const emailInput = document.getElementById('email');
+const formfeild = document.getElementById('contact');
+
+formfeild.addEventListener('submit', function(event) {
+  const email = emailInput.value.trim();
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (!emailRegex.test(email)) {
+    event.preventDefault(); // Prevent form submission
+    alert('Please enter a valid email address.');
+    emailInput.focus(); // Set focus on the email input
+    return; // Exit the function
+  }
+
+  // Submit the form if email is valid (rest of your submission logic)
+});
+
+
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
