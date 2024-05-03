@@ -10,11 +10,11 @@
   - [x] added some extra edus & update it
   - [x] add the skills but as a tiles & img
 
-- [-] change the projects
+- [x] change the projects
   - [X] add some github projects
   - [X] add some personl project like lhs & clg projects
 
-- [] do connect the backend for the contact page
+- [x] do connect the backend for the contact page
   - [x] add the title text feild
 
 - [x] update the 404 page 
@@ -44,6 +44,12 @@ s
  - [x] side bar is not previous level sticky side bar
  - [x] do update the about me para 
  - [-] navbar active color issue
+
+### ending tasks for projects
+ - [-]  add all the links for project & github repo 
+ - [-] if not have atleast upload it into github 
+ - [-] do format & add all the info of the projects 
+
 
 test
 tesssst@tet.com
