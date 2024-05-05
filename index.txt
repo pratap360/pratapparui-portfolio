@@ -667,3 +667,7 @@ form.addEventListener('submit', async (event) => {
     // Redirect to a new page
     // window.location.href = "../pages/success.html";
 })
+
+
+Vertika Chandra
+        Pratap is a very dedicated resource. He is a quick learner and takes ownership.
