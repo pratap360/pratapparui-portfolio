@@ -130,9 +130,12 @@
 .light .h2,
 .light .h3,
 .light .h4,
-.light .h5 { 
+.light .h5,
+.light .h6{ 
     color : var(--black-2);
 }
+
+
 
 .light .info-content .name{
     color: var(--black-2);
