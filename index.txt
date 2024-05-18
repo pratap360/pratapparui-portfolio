@@ -671,3 +671,18 @@ form.addEventListener('submit', async (event) => {
 
 Vertika Chandra
         Pratap is a very dedicated resource. He is a quick learner and takes ownership.
+
+
+Swapnil Daware
+
+I had the pleasure of working closely with Pratap on a challenging project. Their exceptional problem-solving skills and attention to detail were instrumental in its success. I highly recommend Pratap for their dedication, professionalism, and ability to deliver results.
+
+disabled
+
+https://github.com/pratap360/refine-subtrack
+
+
+
+
+
+
