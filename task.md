@@ -89,3 +89,6 @@ async function handleSubmit(event) {
 
 // Event listener for form submission
 document.getElementById('contact').addEventListener('submit', handleSubmit);
+
+
+Mridul Tyagi : Good Problem-solving skills with an ability to learn things quickly and efficiently.

@@ -371,7 +371,25 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/vertika ma'am.jpg" alt="Vertika Chandra" width="80" style="border-radius: 50%;" data-testimonials-avatar>
+                  <img src="./assets/images/Mridul Tyagi Sir.jpg" alt="Mridul Tyagi" width="60" style="border-radius: 50%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mridul Tyagi</h4>
+                <h6 class="h6" data-testimonials-role>Asistant Manager at SEBI</h6>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Good Problem-solving skills with an ability to learn things quickly and efficiently.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/vertika ma'am.jpg" alt="Vertika Chandra" width="60" style="border-radius: 50%;" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Vertika Chandra</h4>
@@ -390,7 +408,7 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Swapnil Daware.jpg" alt="Swapnil Daware" width="80" style="border-radius: 50%;" data-testimonials-avatar>
+                  <img src="./assets/images/Swapnil Daware.jpg" alt="Swapnil Daware" width="60" style="border-radius: 50%;" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Swapnil Daware</h4>
@@ -523,7 +541,7 @@
         <header>
           <h2 class="h2 article-title">Skills</h2>
         </header>
-
+        
 
         <section class="skill">
           <div class="title-wrapper">
@@ -761,8 +779,14 @@
                 Skills: Web Applications · Application Development · Web Application Development · Website Building · React.js · Front-End Development · Responsive Web Design
               </p>
             </li>
-
           </ol>
+          <br>
+          <button class="form-btn" title="disabled" disabled data-form-btn>
+            <ion-icon name="arrow-down-circle" role="img" class="md hydrated" aria-label="arrow down circle"></ion-icon>
+            <a href="/path_to_file" download style="text-decoration: none; color: #C13B2B;">Download Resume</a>
+            <!-- <a href="resources/space.jpg" download style="text-decoration: none; color: #C13B2B;">Download Resume</a> -->
+          </button>
+          
         </section>
       </article>
 
@@ -779,6 +803,12 @@
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
+
+        <section class="about-text">
+          <p>
+            "It has been a pleasure working on these projects. Please take a moment to browse them."
+          </p>
+        </section>
 
         <section class="projects">
 
@@ -802,6 +832,10 @@
 
             <li class="filter-item">
               <button data-filter-btn>Misc</button>
+            </li>
+            
+            <li class="filter-item">
+              <button data-filter-btn>Upcoming</button>
             </li>
 
           </ul>
@@ -840,15 +874,45 @@
                 <button data-select-item>Misc</button>
               </li>
 
+              <li class="select-item">
+                <button data-select-item>Upcoming</button>
+              </li>
+
             </ul>
 
           </div>
 
           <ul class="project-list">
 
+            <li class="project-item  active" data-filter-item data-category="upcoming">
+              <a href="#" title="Working on progress" data-project-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./resources/project_tbn/loading-chrome.png" alt="Sub track" loading="lazy">
+                </figure>
+                <h3 class="project-title">DART</h3>
+                <p class="project-category">Upcoming,Web App</p>
+              </a>
+            </li>
 
-          <!-- <li class="project-item  active" data-filter-item data-category="web app">
-            <a href="./projects/Last-hope.html" data-project-item>
+            <li class="project-item  active" data-filter-item data-category="upcoming">
+              <a href="./projects/subtrack.html" title="Working on progress" data-project-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./resources/project_tbn/subtrack/thumbnail 5.png" alt="Sub track" loading="lazy">
+                </figure>
+                <h3 class="project-title">Subtrack</h3>
+                <p class="project-category">Upcoming,Web App</p>
+              </a>
+            </li>
+
+          <li class="project-item  active" data-filter-item data-category="web app">
+            <a href="#" title="Working on progress" data-project-item>
+            <!-- <a href="./projects/Last-hope.html" data-project-item> -->
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -857,22 +921,11 @@
                   data-project-thumbnail>
               </figure>
               <h3 class="project-title" data-project-name>Last Hope Web App</h3>
-              <p class="project-category" data-project-category>Web app</p>
-            </a>
-          </li> -->
-
-          <li class="project-item  active" data-filter-item data-category="web app">
-            <a href="./projects/subtrack.html">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./resources/project_tbn/subtrack/thumbnail 5.png" alt="Sub track" loading="lazy">
-              </figure>
-              <h3 class="project-title">Subtrack</h3>
-              <p class="project-category">Web app</p>
+              <p class="project-category" data-project-category>Upcoming,Web App</p>
             </a>
           </li>
+
+
 
             <li class="project-item  active" data-filter-item data-category="development">
               <a href="./projects/notify-mumbai.html">
@@ -939,6 +992,7 @@
                 <p class="project-category">Misc</p>
               </a>
             </li>
+
         
           </ul>
         </section>
