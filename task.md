@@ -91,4 +91,4 @@ async function handleSubmit(event) {
 document.getElementById('contact').addEventListener('submit', handleSubmit);
 
 
-Mridul Tyagi : Good Problem-solving skills with an ability to learn things quickly and efficiently.
+Mridul Tyagi : Good Problem-solving skills with an ability to learn things quickly and efficiently
