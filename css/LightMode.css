@@ -183,7 +183,11 @@
 .light .info_more-btn::before,
 .light .service-item::before,
 .light .form-btn:disabled:hover::before ,
+.light .dwl-btn:disabled:hover::before ,
 .light .form-btn::before{
+    background: var(--bg-gradient-light-jet);
+}
+.light .dwl-btn::before{
     background: var(--bg-gradient-light-jet);
 }
 
@@ -202,7 +206,11 @@
 .light .service-item,
 .light .blog-post-item > a ,
 .light .form-btn,
+.light .dwl-btn,
 .light .form-btn:disabled:hover{
+    background:var(--border-gradient-light-onyx);
+}
+.light .dwl-btn:disabled:hover{
     background:var(--border-gradient-light-onyx);
 }
 

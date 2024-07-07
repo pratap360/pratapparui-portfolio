@@ -1241,6 +1241,52 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+.dwl-btn {
+  position: relative;
+  width: 100%;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.dwl-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.dwl-btn ion-icon { font-size: 16px; }
+
+.dwl-btn:hover { background: var(--bg-gradient-yellow-1); }
+
+.dwl-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+
+.dwl-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.dwl-btn:disabled:hover { background: var(--border-gradient-onyx); }
+
+.dwl-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+
+
+
 
 /*-----------------------------------*\
   #RESPONSIVE
@@ -1548,12 +1594,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   textarea.form-input { margin-bottom: 30px; }
 
-  .form-btn {
+  .form-btn, .dwl-btn {
     --fs-6: 16px;
     padding: 16px 20px;
   }
 
   .form-btn ion-icon { font-size: 18px; }
+  .dwl-btn ion-icon { font-size: 18px; }
 
 }
 
@@ -1648,7 +1695,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
-  .form-btn {
+  .form-btn , .dwl-btn {
     width: max-content;
     margin-left: auto;
   }
