@@ -59,3 +59,33 @@ article.err{
     padding: 15px;
     box-shadow: var(--shadow-1);
 }
+
+/* mouse cursor css start here  */
+
+.light .cursor-dot{
+    width: 15px;
+    height: 15px;
+    /* background-color: #1e1e1f; */
+    background-color: var(--vegas-gold); 
+  }
+  
+  .light  .cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 4%, 0.65);
+  }
+  
+  /* .light  .cursor-dot,
+  .light .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+   */
+  
+  /* mouse cursor css end here  */

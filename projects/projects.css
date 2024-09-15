@@ -126,6 +126,7 @@
 .button-container {
     display: flex;
     flex-direction: column; /* Stack items vertically by default */
+    cursor: pointer;
   }
   
   .form-btn {
@@ -181,3 +182,31 @@ li.tech-stack{
     }
 } */
 
+/* mouse cursor css start here  */
+
+.cursor-dot{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+  }
+  
+  .cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--vegas-gold); 
+  }
+  
+  .cursor-dot,
+  .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  
+  
+  /* mouse cursor css end here  */

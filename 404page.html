@@ -35,19 +35,24 @@
     <script defer src="/js/dynamicTitle.js"></script>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCTCG6Q3XR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCTCG6Q3XR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-SCTCG6Q3XR');
-</script>
+        gtag('config', 'G-SCTCG6Q3XR');
+    </script>
+
+
 
 </head>
 
 <body>
+
     <main>
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
         <!--- #main-content-->
         <div class="main-content">
             <!--- #NAVBAR-->
@@ -73,6 +78,27 @@
             </article>
         </div>
     </main>
+    <script>
+        // ! custom cursor 
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`
+            cursorDot.style.top = `${posY}px`
+
+            // * with animation 
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 300, fill: "forwards" });
+
+        })
+
+    </script>
 </body>
 
 </html>
