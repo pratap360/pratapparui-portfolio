@@ -46,6 +46,23 @@ function DarkLightMode() {
 const cursorDot = document.querySelector("[data-cursor-dot]") ;
 const cursorOutline = document.querySelector("[data-cursor-outline]") ;
 
+// Check screen width and hide cursor if on mobile/tablet
+function handleResize() {
+  if (window.innerWidth <= 1024) {
+    cursorDot.style.display = "none";
+    cursorOutline.style.display = "none";
+  } else {
+    cursorDot.style.display = "block";
+    cursorOutline.style.display = "block";
+  }
+}
+
+// Initial check
+handleResize();
+
+// Listen for window resize
+window.addEventListener("resize", handleResize);
+
 window.addEventListener("mousemove",function (e) {
   const posX = e.clientX;
   const posY = e.clientY;

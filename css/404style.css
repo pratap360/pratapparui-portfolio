@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    height: 100vh;
 }
 
 .page_404 {
@@ -35,6 +36,7 @@ body{
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .page_404 .btn:hover {

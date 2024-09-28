@@ -1299,6 +1299,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 450px) {
 
+
   /**
    * client
    */
@@ -1313,6 +1314,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+ 
 
 }
 
@@ -1603,6 +1606,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn ion-icon { font-size: 18px; }
   .dwl-btn ion-icon { font-size: 18px; }
 
+  .cursor-dot, .cursor-outline {
+    display: none;
+  }
 }
 
 
