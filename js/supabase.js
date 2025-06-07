@@ -1,7 +1,7 @@
 const { createClient } = supabase;
 document.addEventListener('DOMContentLoaded', async function () {
-    const supabaseUrl = 'https://cmfacgmrvdtovroxedbq.supabase.co';
-    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtZmFjZ21ydmR0b3Zyb3hlZGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQyMTc4MzUsImV4cCI6MjAyOTc5MzgzNX0.rARfkTK-stOvTFNe7ihs3dp1DE5J8udGPEcBIhu83Y0';
+    const supabaseUrl = 'https://gbqrbbklcijopussbudq.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdicXJiYmtsY2lqb3B1c3NidWRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkyMzg3MDgsImV4cCI6MjA2NDgxNDcwOH0.0HVmEwxUaY0gLjPUqSOABCrI6bOHwjjy7ARD6MBNDgw';
     const supabase = createClient(supabaseUrl, supabaseKey);
 
     const Contact = document.querySelector("#contact");
@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     Contact.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        const prayerInput = Contact.querySelectorAll('input, textarea');
+        const contactForm = Contact.querySelectorAll('input, textarea');
 
         const submission = {};
 
-        prayerInput.forEach(element => {
+        contactForm.forEach(element => {
             const { value, name } = element;
             if (value) {
                 submission[name] = value;
@@ -26,14 +26,31 @@ document.addEventListener('DOMContentLoaded', async function () {
             .from('Contact')
             .insert([submission], { returning: 'minimal' });
 
-        console.log(error, data);
+        // console.log(error, data);
 
+        // if (error) {
+        //     alert('❌ facing some issue in Backend ! Warning :: Not submitted');
+        // } else {
+        //     alert("✔️ Thank you for contacting ! I'll get back to you soon.");
+        // }
+
+        const modal = document.getElementById('custom-alert');
+        const modalMessage = document.getElementById('alert-message');
+    
         if (error) {
-            alert('facing some issue in Backend ! Warning :: Not submitted');
+            modalMessage.textContent = '❌ Facing some issue in Backend!  ⚠️Warning: Not submitted.';
+            modal.classList.add('error');
         } else {
-            alert("Thank you for contacting ! I'll get back to you soon.");
+            modalMessage.textContent = "✔️ Thank you for contacting! I'll get back to you soon.";
+            modal.classList.add('success');
         }
-        prayerInput.forEach(element => element.value = '')
+    
+        modal.style.display = 'block';
+
+
+
+
+        contactForm.forEach(element => element.value = '')
     });
 });
 // if (error){
@@ -53,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 // }
 
 // reset the full form 
-// prayerInput.forEach(element => element.value = '')
+// contactForm.forEach(element => element.value = '')
 
 
 //? Redirect to a new page

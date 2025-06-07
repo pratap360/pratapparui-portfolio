@@ -1987,6 +1987,52 @@ textarea.form-input::-webkit-resizer { display: none; }
   pointer-events: none;
 }
 
-
-
 /* mouse cursor css end here  */
+
+/* modal for alert custom css start here  */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1E1E1F;
+  border-radius: 1.5rem;
+  box-shadow: 12px 18px 18px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-alert {
+  text-align: center;
+}
+
+.modal.success {
+  border: 2px solid green;
+}
+
+.modal.error {
+  border: 2px solid red;
+}
+
+.alert-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #F88263;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+#alert-message{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.alert-btn:hover {
+  background-color: #C13B2B;
+}
+
+/* modal for alert custom css ends here  */

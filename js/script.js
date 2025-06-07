@@ -300,7 +300,11 @@ window.addEventListener("mousemove",function (e) {
 
 })
 
-
+function closeModal() {
+  const modal = document.getElementById('custom-alert');
+  modal.style.display = 'none';
+  modal.classList.remove('success', 'error');
+}
 
 
 

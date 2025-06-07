@@ -325,3 +325,54 @@ body.light::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.212)
    */
   
   /* mouse cursor css end here  */
+
+
+/* modal for alert custom css start here  */
+.light .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F5F5F5;
+    border-radius: 1.5rem;
+    box-shadow: 12px 18px 18px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .light .modal-alert {
+    text-align: center;
+  }
+  
+  .light .modal.success {
+    border: 2px solid green;
+  }
+  
+  .light .modal.error {
+    border: 2px solid red;
+  }
+  
+  .light .alert-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #F88263;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .light #alert-message{
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .light .alert-btn:hover {
+    background-color: #C13B2B;
+  }
+  
+  /* modal for alert custom css ends here  */
+  
