@@ -306,6 +306,13 @@ function closeModal() {
   modal.classList.remove('success', 'error');
 }
 
+// Function to trigger Cal.com popup
+function scrollToContact() {
+  if (window.Cal && window.Cal.ns && window.Cal.ns['client-discussion-via-portfolio']) {
+    window.Cal.ns['client-discussion-via-portfolio']('ui', {"hideEventTypeDetails":false,"layout":"month_view"});
+  }
+}
+
 
 
 
@@ -318,3 +325,12 @@ function closeModal() {
 DarkLightMode();
 
 
+function scrollToContact() {
+  const navLinks = document.querySelectorAll('[data-nav-link]');
+  for (let i = 0; i < navLinks.length; i++) {
+    if (navLinks[i].innerHTML.toLowerCase() === 'contact') {
+      navLinks[i].click();
+      break;
+    }
+  }
+}

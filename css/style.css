@@ -1285,6 +1285,41 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .dwl-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+.meet-btn {
+  position: relative;
+  width: max-content;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  margin: 20px 0;
+}
+
+.meet-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.meet-btn ion-icon { font-size: 16px; }
+
+.meet-btn:hover { background: var(--bg-gradient-yellow-1); }
+
+.meet-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+
 
 
 
@@ -2036,3 +2071,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* modal for alert custom css ends here  */
+.contact-btn {
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  margin: 20px 0;
+  width: max-content;
+  transition: var(--transition-1);
+}
+
+.contact-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}

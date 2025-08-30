@@ -376,3 +376,11 @@ body.light::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.212)
   
   /* modal for alert custom css ends here  */
   
+.light .meet-btn,
+.light .meet-btn:disabled:hover {
+  background: var(--border-gradient-light-onyx);
+}
+
+.light .meet-btn::before {
+  background: var(--bg-gradient-light-jet);
+}
