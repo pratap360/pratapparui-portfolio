@@ -2088,3 +2088,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 .contact-btn:hover {
   background: var(--bg-gradient-yellow-1);
 }
+
+.timeline-item-title a {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+}
+
+.timeline-item-title a:hover {
+  color: var(--vegas-gold);
+}

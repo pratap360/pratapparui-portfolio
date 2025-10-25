@@ -384,3 +384,11 @@ body.light::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.212)
 .light .meet-btn::before {
   background: var(--bg-gradient-light-jet);
 }
+
+.light .timeline-item-title a {
+  color: var(--vegas-gold);
+}
+
+.light .timeline-item-title a:hover {
+  color: var(--orange-yellow-crayola);
+}
