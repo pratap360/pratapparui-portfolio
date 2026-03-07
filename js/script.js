@@ -334,3 +334,12 @@ function scrollToContact() {
     }
   }
 }
+
+// Toggle role content
+function toggleRole(element) {
+  const roleContent = element.nextElementSibling;
+  const isActive = element.classList.contains('active');
+  
+  element.classList.toggle('active');
+  roleContent.classList.toggle('active');
+}
