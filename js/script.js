@@ -57,7 +57,6 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 
-
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
@@ -212,17 +211,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // mprojectsCloseBtn.addEventListener("click", projectsModalFunc);
 // poverlay.addEventListener("click", projectsModalFunc);
 
-
-
-
-
-
-
-
-
-
-
-
 // to change dark mode on click
 // const inp = document.getElementById('inp');
 
@@ -230,6 +218,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // 	document.body.classList.toggle('light');
 // });
 
+function showDownloadResumeAlert() {
+  alert('Resume is not upto date. Please check back later.')
+}
 
 // ! LATEST LIGHT DARK MODE CODE 
 
@@ -303,7 +294,7 @@ window.addEventListener("mousemove",function (e) {
 function closeModal() {
   const modal = document.getElementById('custom-alert');
   modal.style.display = 'none';
-  modal.classList.remove('success', 'error');
+  modal.classList.remove('success', 'error','info');
 }
 
 // Function to trigger Cal.com popup

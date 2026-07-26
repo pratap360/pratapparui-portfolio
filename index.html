@@ -537,7 +537,7 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" style="border-radius: 50%;"
+                <img src="./assets/images" alt="no image" width="80" style="border-radius: 50%;"
                   data-modal-img>
               </figure>
 
@@ -564,10 +564,17 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Projects & Clients</h3>
+          <h3 class="h3 clients-title">Past Projects & Clients</h3>
           <!-- <p class="testimonials-text">
             <u><i>coming soon...</i></u></p> -->
           <ul class="clients-list has-scrollbar">
+
+            <!-- * 3rd client  -->
+            <li class="clients-item">
+              <a href="#">
+                <img src="./resources/uti mf logo.PNG" alt="client logo" width="180px" height="180px">
+              </a>
+            </li>
 
             <!-- * 2nd client  -->
             <li class="clients-item">
@@ -1019,13 +1026,12 @@
             </li>
           </ol>
           <br>
-          <button class="dwl-btn" title="Download latest Resume">
+          <button class="dwl-btn" type="button" title="Download latest Resume" onclick="showDownloadResumeAlert()">
             <ion-icon name="arrow-down-circle" role="img" class="md hydrated" aria-label="arrow down circle"></ion-icon>
-            <a href="resources/Pratap Parui CV.pdf" download style="text-decoration: none; color: #C13B2B;">Download
-              Resume</a>
+            <!-- <a href="#" download style="text-decoration: none; color: #C13B2B;">Download
+              Resume</a> -->
+              <span style="text-decoration: none; color: #C13B2B;">Download Resume</span>
           </button>
-          <!-- <a href="resources/space.jpg" download style="text-decoration: none; color: #C13B2B;">Download Resume</a> -->
-
         </section>
       </article>
 
@@ -1122,6 +1128,19 @@
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="upcoming">
+              <a href="#" title="live on Product Hunt" data-project-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./resources/project_tbn/loading-chrome.png" alt="upcoming" loading="lazy">
+                </figure>
+                <h3 class="project-title">Photographer/Videographer Portfolio</h3>
+                <p class="project-category">Upcoming,Web App</p>
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="web app">
               <a href="./projects/yummunity.html" title="live on Product Hunt" data-project-item>
@@ -1621,10 +1640,6 @@
 
       </article>
 
-
-
-
-
       <!--
         - #CONTACT
       -->
@@ -1636,7 +1651,7 @@
         </header>
         <section class="about-text">
 
-          <h4>Looking to connect ? Having Any Questons ? I'm always open for a conversation and I'd love to hear from
+          <h4>Looking to connect? Having Any Question? I'm always open for a conversation and I'd love to hear from
             you.</h4>
         </section>
 
